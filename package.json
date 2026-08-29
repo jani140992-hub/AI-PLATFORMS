@@ -1,0 +1,27 @@
+{
+  "name": "omniflow-ai-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo for OmniFlow AI Enterprise Platform",
+  "workspaces": [
+    "frontend",
+    "sdks/typescript"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "rag",
+    "llmops",
+    "gateway",
+    "orchestration"
+  ],
+  "author": "OmniFlow AI Team <engineering@omniflow.ai>",
+  "license": "Apache-2.0"
+}

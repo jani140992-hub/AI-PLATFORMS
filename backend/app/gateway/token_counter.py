@@ -45,7 +45,7 @@ class TokenCounter:
         # 4 characters per token base
         tokens = max(1, content_len // 4)
         # Message overhead: <|im_start|>role
-content<|im_end|> adds ~4 tokens
+        # content<|im_end|> adds ~4 tokens
         tokens += 4
         if message.name:
             tokens += len(message.name) // 4 + 1

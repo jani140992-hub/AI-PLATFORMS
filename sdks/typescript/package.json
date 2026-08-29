@@ -10,7 +10,7 @@
   },
   "keywords": ["ai", "agents", "llm", "rag", "omniflow"],
   "author": "OmniFlow AI Team <sdk@omniflow.ai>",
-  "license": "Apache-2.0",
+  "license": "UNLICENSED",
   "dependencies": {
     "cross-fetch": "^4.0.0"
   },

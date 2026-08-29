@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Enterprise Multi-Agent & LLMOps Platform"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "Apache-2.0" }
+license = { text = "Proprietary" }
 authors = [
     { name = "OmniFlow AI Team", email = "engineering@omniflow.ai" }
 ]
@@ -16,8 +16,7 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Intended Audience :: Information Technology",
-    "License :: OSI Approved :: Apache Software License",
-    "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",

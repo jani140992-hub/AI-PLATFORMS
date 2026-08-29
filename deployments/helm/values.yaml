@@ -1,0 +1,72 @@
+# Default values for omniflow-ai chart.
+replicaCount:
+  backend: 3
+  frontend: 2
+  worker: 4
+
+image:
+  backend:
+    repository: omniflow/backend
+    pullPolicy: IfNotPresent
+    tag: "1.0.0"
+  frontend:
+    repository: omniflow/frontend
+    pullPolicy: IfNotPresent
+    tag: "1.0.0"
+  worker:
+    repository: omniflow/worker
+    pullPolicy: IfNotPresent
+    tag: "1.0.0"
+
+service:
+  backend:
+    type: ClusterIP
+    port: 8000
+  frontend:
+    type: ClusterIP
+    port: 3000
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+  hosts:
+    - host: app.omniflow.ai
+      paths:
+        - path: /api
+          pathType: Prefix
+          service: backend
+        - path: /
+          pathType: Prefix
+          service: frontend
+  tls:
+    - secretName: omniflow-tls-cert
+      hosts:
+        - app.omniflow.ai
+
+autoscaling:
+  backend:
+    enabled: true
+    minReplicas: 3
+    maxReplicas: 20
+    targetCPUUtilizationPercentage: 70
+    targetMemoryUtilizationPercentage: 80
+
+resources:
+  backend:
+    limits:
+      cpu: 2000m
+      memory: 4Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
+  worker:
+    limits:
+      cpu: 4000m
+      memory: 8Gi
+    requests:
+      cpu: 1000m
+      memory: 2Gi

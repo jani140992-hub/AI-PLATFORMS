@@ -1,0 +1,9 @@
+apiVersion: v2
+name: omniflow-ai
+description: Enterprise Multi-Agent & LLMOps Platform Kubernetes Helm Chart
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+maintainers:
+  - name: OmniFlow AI Engineering
+    email: engineering@omniflow.ai

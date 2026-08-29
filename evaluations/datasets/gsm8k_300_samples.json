@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "gsm8k-0001",
+    "problem": "A distribution warehouse starts with 19 pallets of merchandise. Workers ship out 8 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 19 pallets.\\n2. Dispatched count: 8 pallets.\\n3. Remaining: 19 - 8 = 11 pallets.\\n#### 11",
+    "answer": "11"
+  },
+  {
+    "id": "gsm8k-0002",
+    "problem": "A distribution warehouse starts with 26 pallets of merchandise. Workers ship out 11 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 26 pallets.\\n2. Dispatched count: 11 pallets.\\n3. Remaining: 26 - 11 = 15 pallets.\\n#### 15",
+    "answer": "15"
+  },
+  {
+    "id": "gsm8k-0003",
+    "problem": "A distribution warehouse starts with 33 pallets of merchandise. Workers ship out 14 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 33 pallets.\\n2. Dispatched count: 14 pallets.\\n3. Remaining: 33 - 14 = 19 pallets.\\n#### 19",
+    "answer": "19"
+  },
+  {
+    "id": "gsm8k-0004",
+    "problem": "A distribution warehouse starts with 40 pallets of merchandise. Workers ship out 17 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 40 pallets.\\n2. Dispatched count: 17 pallets.\\n3. Remaining: 40 - 17 = 23 pallets.\\n#### 23",
+    "answer": "23"
+  },
+  {
+    "id": "gsm8k-0005",
+    "problem": "A distribution warehouse starts with 47 pallets of merchandise. Workers ship out 20 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 47 pallets.\\n2. Dispatched count: 20 pallets.\\n3. Remaining: 47 - 20 = 27 pallets.\\n#### 27",
+    "answer": "27"
+  },
+  {
+    "id": "gsm8k-0006",
+    "problem": "A distribution warehouse starts with 54 pallets of merchandise. Workers ship out 23 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 54 pallets.\\n2. Dispatched count: 23 pallets.\\n3. Remaining: 54 - 23 = 31 pallets.\\n#### 31",
+    "answer": "31"
+  },
+  {
+    "id": "gsm8k-0007",
+    "problem": "A distribution warehouse starts with 61 pallets of merchandise. Workers ship out 26 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 61 pallets.\\n2. Dispatched count: 26 pallets.\\n3. Remaining: 61 - 26 = 35 pallets.\\n#### 35",
+    "answer": "35"
+  },
+  {
+    "id": "gsm8k-0008",
+    "problem": "A distribution warehouse starts with 68 pallets of merchandise. Workers ship out 29 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 68 pallets.\\n2. Dispatched count: 29 pallets.\\n3. Remaining: 68 - 29 = 39 pallets.\\n#### 39",
+    "answer": "39"
+  },
+  {
+    "id": "gsm8k-0009",
+    "problem": "A distribution warehouse starts with 75 pallets of merchandise. Workers ship out 32 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 75 pallets.\\n2. Dispatched count: 32 pallets.\\n3. Remaining: 75 - 32 = 43 pallets.\\n#### 43",
+    "answer": "43"
+  },
+  {
+    "id": "gsm8k-0010",
+    "problem": "A distribution warehouse starts with 82 pallets of merchandise. Workers ship out 35 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 82 pallets.\\n2. Dispatched count: 35 pallets.\\n3. Remaining: 82 - 35 = 47 pallets.\\n#### 47",
+    "answer": "47"
+  },
+  {
+    "id": "gsm8k-0011",
+    "problem": "A distribution warehouse starts with 89 pallets of merchandise. Workers ship out 38 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 89 pallets.\\n2. Dispatched count: 38 pallets.\\n3. Remaining: 89 - 38 = 51 pallets.\\n#### 51",
+    "answer": "51"
+  },
+  {
+    "id": "gsm8k-0012",
+    "problem": "A distribution warehouse starts with 96 pallets of merchandise. Workers ship out 41 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 96 pallets.\\n2. Dispatched count: 41 pallets.\\n3. Remaining: 96 - 41 = 55 pallets.\\n#### 55",
+    "answer": "55"
+  },
+  {
+    "id": "gsm8k-0013",
+    "problem": "A distribution warehouse starts with 103 pallets of merchandise. Workers ship out 44 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 103 pallets.\\n2. Dispatched count: 44 pallets.\\n3. Remaining: 103 - 44 = 59 pallets.\\n#### 59",
+    "answer": "59"
+  },
+  {
+    "id": "gsm8k-0014",
+    "problem": "A distribution warehouse starts with 110 pallets of merchandise. Workers ship out 47 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 110 pallets.\\n2. Dispatched count: 47 pallets.\\n3. Remaining: 110 - 47 = 63 pallets.\\n#### 63",
+    "answer": "63"
+  },
+  {
+    "id": "gsm8k-0015",
+    "problem": "A distribution warehouse starts with 117 pallets of merchandise. Workers ship out 50 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 117 pallets.\\n2. Dispatched count: 50 pallets.\\n3. Remaining: 117 - 50 = 67 pallets.\\n#### 67",
+    "answer": "67"
+  },
+  {
+    "id": "gsm8k-0016",
+    "problem": "A distribution warehouse starts with 124 pallets of merchandise. Workers ship out 53 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 124 pallets.\\n2. Dispatched count: 53 pallets.\\n3. Remaining: 124 - 53 = 71 pallets.\\n#### 71",
+    "answer": "71"
+  },
+  {
+    "id": "gsm8k-0017",
+    "problem": "A distribution warehouse starts with 131 pallets of merchandise. Workers ship out 56 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 131 pallets.\\n2. Dispatched count: 56 pallets.\\n3. Remaining: 131 - 56 = 75 pallets.\\n#### 75",
+    "answer": "75"
+  },
+  {
+    "id": "gsm8k-0018",
+    "problem": "A distribution warehouse starts with 138 pallets of merchandise. Workers ship out 59 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 138 pallets.\\n2. Dispatched count: 59 pallets.\\n3. Remaining: 138 - 59 = 79 pallets.\\n#### 79",
+    "answer": "79"
+  },
+  {
+    "id": "gsm8k-0019",
+    "problem": "A distribution warehouse starts with 145 pallets of merchandise. Workers ship out 62 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 145 pallets.\\n2. Dispatched count: 62 pallets.\\n3. Remaining: 145 - 62 = 83 pallets.\\n#### 83",
+    "answer": "83"
+  },
+  {
+    "id": "gsm8k-0020",
+    "problem": "A distribution warehouse starts with 152 pallets of merchandise. Workers ship out 65 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 152 pallets.\\n2. Dispatched count: 65 pallets.\\n3. Remaining: 152 - 65 = 87 pallets.\\n#### 87",
+    "answer": "87"
+  },
+  {
+    "id": "gsm8k-0021",
+    "problem": "A distribution warehouse starts with 159 pallets of merchandise. Workers ship out 68 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 159 pallets.\\n2. Dispatched count: 68 pallets.\\n3. Remaining: 159 - 68 = 91 pallets.\\n#### 91",
+    "answer": "91"
+  },
+  {
+    "id": "gsm8k-0022",
+    "problem": "A distribution warehouse starts with 166 pallets of merchandise. Workers ship out 71 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 166 pallets.\\n2. Dispatched count: 71 pallets.\\n3. Remaining: 166 - 71 = 95 pallets.\\n#### 95",
+    "answer": "95"
+  },
+  {
+    "id": "gsm8k-0023",
+    "problem": "A distribution warehouse starts with 173 pallets of merchandise. Workers ship out 74 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 173 pallets.\\n2. Dispatched count: 74 pallets.\\n3. Remaining: 173 - 74 = 99 pallets.\\n#### 99",
+    "answer": "99"
+  },
+  {
+    "id": "gsm8k-0024",
+    "problem": "A distribution warehouse starts with 180 pallets of merchandise. Workers ship out 77 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 180 pallets.\\n2. Dispatched count: 77 pallets.\\n3. Remaining: 180 - 77 = 103 pallets.\\n#### 103",
+    "answer": "103"
+  },
+  {
+    "id": "gsm8k-0025",
+    "problem": "A distribution warehouse starts with 187 pallets of merchandise. Workers ship out 80 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 187 pallets.\\n2. Dispatched count: 80 pallets.\\n3. Remaining: 187 - 80 = 107 pallets.\\n#### 107",
+    "answer": "107"
+  },
+  {
+    "id": "gsm8k-0026",
+    "problem": "A distribution warehouse starts with 194 pallets of merchandise. Workers ship out 83 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 194 pallets.\\n2. Dispatched count: 83 pallets.\\n3. Remaining: 194 - 83 = 111 pallets.\\n#### 111",
+    "answer": "111"
+  },
+  {
+    "id": "gsm8k-0027",
+    "problem": "A distribution warehouse starts with 201 pallets of merchandise. Workers ship out 86 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 201 pallets.\\n2. Dispatched count: 86 pallets.\\n3. Remaining: 201 - 86 = 115 pallets.\\n#### 115",
+    "answer": "115"
+  },
+  {
+    "id": "gsm8k-0028",
+    "problem": "A distribution warehouse starts with 208 pallets of merchandise. Workers ship out 89 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 208 pallets.\\n2. Dispatched count: 89 pallets.\\n3. Remaining: 208 - 89 = 119 pallets.\\n#### 119",
+    "answer": "119"
+  },
+  {
+    "id": "gsm8k-0029",
+    "problem": "A distribution warehouse starts with 215 pallets of merchandise. Workers ship out 92 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 215 pallets.\\n2. Dispatched count: 92 pallets.\\n3. Remaining: 215 - 92 = 123 pallets.\\n#### 123",
+    "answer": "123"
+  },
+  {
+    "id": "gsm8k-0030",
+    "problem": "A distribution warehouse starts with 222 pallets of merchandise. Workers ship out 95 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 222 pallets.\\n2. Dispatched count: 95 pallets.\\n3. Remaining: 222 - 95 = 127 pallets.\\n#### 127",
+    "answer": "127"
+  },
+  {
+    "id": "gsm8k-0031",
+    "problem": "A distribution warehouse starts with 229 pallets of merchandise. Workers ship out 98 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 229 pallets.\\n2. Dispatched count: 98 pallets.\\n3. Remaining: 229 - 98 = 131 pallets.\\n#### 131",
+    "answer": "131"
+  },
+  {
+    "id": "gsm8k-0032",
+    "problem": "A distribution warehouse starts with 236 pallets of merchandise. Workers ship out 101 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 236 pallets.\\n2. Dispatched count: 101 pallets.\\n3. Remaining: 236 - 101 = 135 pallets.\\n#### 135",
+    "answer": "135"
+  },
+  {
+    "id": "gsm8k-0033",
+    "problem": "A distribution warehouse starts with 243 pallets of merchandise. Workers ship out 104 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 243 pallets.\\n2. Dispatched count: 104 pallets.\\n3. Remaining: 243 - 104 = 139 pallets.\\n#### 139",
+    "answer": "139"
+  },
+  {
+    "id": "gsm8k-0034",
+    "problem": "A distribution warehouse starts with 250 pallets of merchandise. Workers ship out 107 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 250 pallets.\\n2. Dispatched count: 107 pallets.\\n3. Remaining: 250 - 107 = 143 pallets.\\n#### 143",
+    "answer": "143"
+  },
+  {
+    "id": "gsm8k-0035",
+    "problem": "A distribution warehouse starts with 257 pallets of merchandise. Workers ship out 110 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 257 pallets.\\n2. Dispatched count: 110 pallets.\\n3. Remaining: 257 - 110 = 147 pallets.\\n#### 147",
+    "answer": "147"
+  },
+  {
+    "id": "gsm8k-0036",
+    "problem": "A distribution warehouse starts with 264 pallets of merchandise. Workers ship out 113 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 264 pallets.\\n2. Dispatched count: 113 pallets.\\n3. Remaining: 264 - 113 = 151 pallets.\\n#### 151",
+    "answer": "151"
+  },
+  {
+    "id": "gsm8k-0037",
+    "problem": "A distribution warehouse starts with 271 pallets of merchandise. Workers ship out 116 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 271 pallets.\\n2. Dispatched count: 116 pallets.\\n3. Remaining: 271 - 116 = 155 pallets.\\n#### 155",
+    "answer": "155"
+  },
+  {
+    "id": "gsm8k-0038",
+    "problem": "A distribution warehouse starts with 278 pallets of merchandise. Workers ship out 119 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 278 pallets.\\n2. Dispatched count: 119 pallets.\\n3. Remaining: 278 - 119 = 159 pallets.\\n#### 159",
+    "answer": "159"
+  },
+  {
+    "id": "gsm8k-0039",
+    "problem": "A distribution warehouse starts with 285 pallets of merchandise. Workers ship out 122 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 285 pallets.\\n2. Dispatched count: 122 pallets.\\n3. Remaining: 285 - 122 = 163 pallets.\\n#### 163",
+    "answer": "163"
+  },
+  {
+    "id": "gsm8k-0040",
+    "problem": "A distribution warehouse starts with 292 pallets of merchandise. Workers ship out 125 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 292 pallets.\\n2. Dispatched count: 125 pallets.\\n3. Remaining: 292 - 125 = 167 pallets.\\n#### 167",
+    "answer": "167"
+  },
+  {
+    "id": "gsm8k-0041",
+    "problem": "A distribution warehouse starts with 299 pallets of merchandise. Workers ship out 128 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 299 pallets.\\n2. Dispatched count: 128 pallets.\\n3. Remaining: 299 - 128 = 171 pallets.\\n#### 171",
+    "answer": "171"
+  },
+  {
+    "id": "gsm8k-0042",
+    "problem": "A distribution warehouse starts with 306 pallets of merchandise. Workers ship out 131 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 306 pallets.\\n2. Dispatched count: 131 pallets.\\n3. Remaining: 306 - 131 = 175 pallets.\\n#### 175",
+    "answer": "175"
+  },
+  {
+    "id": "gsm8k-0043",
+    "problem": "A distribution warehouse starts with 313 pallets of merchandise. Workers ship out 134 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 313 pallets.\\n2. Dispatched count: 134 pallets.\\n3. Remaining: 313 - 134 = 179 pallets.\\n#### 179",
+    "answer": "179"
+  },
+  {
+    "id": "gsm8k-0044",
+    "problem": "A distribution warehouse starts with 320 pallets of merchandise. Workers ship out 137 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 320 pallets.\\n2. Dispatched count: 137 pallets.\\n3. Remaining: 320 - 137 = 183 pallets.\\n#### 183",
+    "answer": "183"
+  },
+  {
+    "id": "gsm8k-0045",
+    "problem": "A distribution warehouse starts with 327 pallets of merchandise. Workers ship out 140 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 327 pallets.\\n2. Dispatched count: 140 pallets.\\n3. Remaining: 327 - 140 = 187 pallets.\\n#### 187",
+    "answer": "187"
+  },
+  {
+    "id": "gsm8k-0046",
+    "problem": "A distribution warehouse starts with 334 pallets of merchandise. Workers ship out 143 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 334 pallets.\\n2. Dispatched count: 143 pallets.\\n3. Remaining: 334 - 143 = 191 pallets.\\n#### 191",
+    "answer": "191"
+  },
+  {
+    "id": "gsm8k-0047",
+    "problem": "A distribution warehouse starts with 341 pallets of merchandise. Workers ship out 146 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 341 pallets.\\n2. Dispatched count: 146 pallets.\\n3. Remaining: 341 - 146 = 195 pallets.\\n#### 195",
+    "answer": "195"
+  },
+  {
+    "id": "gsm8k-0048",
+    "problem": "A distribution warehouse starts with 348 pallets of merchandise. Workers ship out 149 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 348 pallets.\\n2. Dispatched count: 149 pallets.\\n3. Remaining: 348 - 149 = 199 pallets.\\n#### 199",
+    "answer": "199"
+  },
+  {
+    "id": "gsm8k-0049",
+    "problem": "A distribution warehouse starts with 355 pallets of merchandise. Workers ship out 152 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 355 pallets.\\n2. Dispatched count: 152 pallets.\\n3. Remaining: 355 - 152 = 203 pallets.\\n#### 203",
+    "answer": "203"
+  },
+  {
+    "id": "gsm8k-0050",
+    "problem": "A distribution warehouse starts with 362 pallets of merchandise. Workers ship out 155 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 362 pallets.\\n2. Dispatched count: 155 pallets.\\n3. Remaining: 362 - 155 = 207 pallets.\\n#### 207",
+    "answer": "207"
+  },
+  {
+    "id": "gsm8k-0051",
+    "problem": "A distribution warehouse starts with 369 pallets of merchandise. Workers ship out 158 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 369 pallets.\\n2. Dispatched count: 158 pallets.\\n3. Remaining: 369 - 158 = 211 pallets.\\n#### 211",
+    "answer": "211"
+  },
+  {
+    "id": "gsm8k-0052",
+    "problem": "A distribution warehouse starts with 376 pallets of merchandise. Workers ship out 161 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 376 pallets.\\n2. Dispatched count: 161 pallets.\\n3. Remaining: 376 - 161 = 215 pallets.\\n#### 215",
+    "answer": "215"
+  },
+  {
+    "id": "gsm8k-0053",
+    "problem": "A distribution warehouse starts with 383 pallets of merchandise. Workers ship out 164 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 383 pallets.\\n2. Dispatched count: 164 pallets.\\n3. Remaining: 383 - 164 = 219 pallets.\\n#### 219",
+    "answer": "219"
+  },
+  {
+    "id": "gsm8k-0054",
+    "problem": "A distribution warehouse starts with 390 pallets of merchandise. Workers ship out 167 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 390 pallets.\\n2. Dispatched count: 167 pallets.\\n3. Remaining: 390 - 167 = 223 pallets.\\n#### 223",
+    "answer": "223"
+  },
+  {
+    "id": "gsm8k-0055",
+    "problem": "A distribution warehouse starts with 397 pallets of merchandise. Workers ship out 170 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 397 pallets.\\n2. Dispatched count: 170 pallets.\\n3. Remaining: 397 - 170 = 227 pallets.\\n#### 227",
+    "answer": "227"
+  },
+  {
+    "id": "gsm8k-0056",
+    "problem": "A distribution warehouse starts with 404 pallets of merchandise. Workers ship out 173 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 404 pallets.\\n2. Dispatched count: 173 pallets.\\n3. Remaining: 404 - 173 = 231 pallets.\\n#### 231",
+    "answer": "231"
+  },
+  {
+    "id": "gsm8k-0057",
+    "problem": "A distribution warehouse starts with 411 pallets of merchandise. Workers ship out 176 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 411 pallets.\\n2. Dispatched count: 176 pallets.\\n3. Remaining: 411 - 176 = 235 pallets.\\n#### 235",
+    "answer": "235"
+  },
+  {
+    "id": "gsm8k-0058",
+    "problem": "A distribution warehouse starts with 418 pallets of merchandise. Workers ship out 179 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 418 pallets.\\n2. Dispatched count: 179 pallets.\\n3. Remaining: 418 - 179 = 239 pallets.\\n#### 239",
+    "answer": "239"
+  },
+  {
+    "id": "gsm8k-0059",
+    "problem": "A distribution warehouse starts with 425 pallets of merchandise. Workers ship out 182 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 425 pallets.\\n2. Dispatched count: 182 pallets.\\n3. Remaining: 425 - 182 = 243 pallets.\\n#### 243",
+    "answer": "243"
+  },
+  {
+    "id": "gsm8k-0060",
+    "problem": "A distribution warehouse starts with 432 pallets of merchandise. Workers ship out 185 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 432 pallets.\\n2. Dispatched count: 185 pallets.\\n3. Remaining: 432 - 185 = 247 pallets.\\n#### 247",
+    "answer": "247"
+  },
+  {
+    "id": "gsm8k-0061",
+    "problem": "A distribution warehouse starts with 439 pallets of merchandise. Workers ship out 188 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 439 pallets.\\n2. Dispatched count: 188 pallets.\\n3. Remaining: 439 - 188 = 251 pallets.\\n#### 251",
+    "answer": "251"
+  },
+  {
+    "id": "gsm8k-0062",
+    "problem": "A distribution warehouse starts with 446 pallets of merchandise. Workers ship out 191 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 446 pallets.\\n2. Dispatched count: 191 pallets.\\n3. Remaining: 446 - 191 = 255 pallets.\\n#### 255",
+    "answer": "255"
+  },
+  {
+    "id": "gsm8k-0063",
+    "problem": "A distribution warehouse starts with 453 pallets of merchandise. Workers ship out 194 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 453 pallets.\\n2. Dispatched count: 194 pallets.\\n3. Remaining: 453 - 194 = 259 pallets.\\n#### 259",
+    "answer": "259"
+  },
+  {
+    "id": "gsm8k-0064",
+    "problem": "A distribution warehouse starts with 460 pallets of merchandise. Workers ship out 197 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 460 pallets.\\n2. Dispatched count: 197 pallets.\\n3. Remaining: 460 - 197 = 263 pallets.\\n#### 263",
+    "answer": "263"
+  },
+  {
+    "id": "gsm8k-0065",
+    "problem": "A distribution warehouse starts with 467 pallets of merchandise. Workers ship out 200 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 467 pallets.\\n2. Dispatched count: 200 pallets.\\n3. Remaining: 467 - 200 = 267 pallets.\\n#### 267",
+    "answer": "267"
+  },
+  {
+    "id": "gsm8k-0066",
+    "problem": "A distribution warehouse starts with 474 pallets of merchandise. Workers ship out 203 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 474 pallets.\\n2. Dispatched count: 203 pallets.\\n3. Remaining: 474 - 203 = 271 pallets.\\n#### 271",
+    "answer": "271"
+  },
+  {
+    "id": "gsm8k-0067",
+    "problem": "A distribution warehouse starts with 481 pallets of merchandise. Workers ship out 206 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 481 pallets.\\n2. Dispatched count: 206 pallets.\\n3. Remaining: 481 - 206 = 275 pallets.\\n#### 275",
+    "answer": "275"
+  },
+  {
+    "id": "gsm8k-0068",
+    "problem": "A distribution warehouse starts with 488 pallets of merchandise. Workers ship out 209 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 488 pallets.\\n2. Dispatched count: 209 pallets.\\n3. Remaining: 488 - 209 = 279 pallets.\\n#### 279",
+    "answer": "279"
+  },
+  {
+    "id": "gsm8k-0069",
+    "problem": "A distribution warehouse starts with 495 pallets of merchandise. Workers ship out 212 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 495 pallets.\\n2. Dispatched count: 212 pallets.\\n3. Remaining: 495 - 212 = 283 pallets.\\n#### 283",
+    "answer": "283"
+  },
+  {
+    "id": "gsm8k-0070",
+    "problem": "A distribution warehouse starts with 502 pallets of merchandise. Workers ship out 215 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 502 pallets.\\n2. Dispatched count: 215 pallets.\\n3. Remaining: 502 - 215 = 287 pallets.\\n#### 287",
+    "answer": "287"
+  },
+  {
+    "id": "gsm8k-0071",
+    "problem": "A distribution warehouse starts with 509 pallets of merchandise. Workers ship out 218 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 509 pallets.\\n2. Dispatched count: 218 pallets.\\n3. Remaining: 509 - 218 = 291 pallets.\\n#### 291",
+    "answer": "291"
+  },
+  {
+    "id": "gsm8k-0072",
+    "problem": "A distribution warehouse starts with 516 pallets of merchandise. Workers ship out 221 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 516 pallets.\\n2. Dispatched count: 221 pallets.\\n3. Remaining: 516 - 221 = 295 pallets.\\n#### 295",
+    "answer": "295"
+  },
+  {
+    "id": "gsm8k-0073",
+    "problem": "A distribution warehouse starts with 523 pallets of merchandise. Workers ship out 224 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 523 pallets.\\n2. Dispatched count: 224 pallets.\\n3. Remaining: 523 - 224 = 299 pallets.\\n#### 299",
+    "answer": "299"
+  },
+  {
+    "id": "gsm8k-0074",
+    "problem": "A distribution warehouse starts with 530 pallets of merchandise. Workers ship out 227 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 530 pallets.\\n2. Dispatched count: 227 pallets.\\n3. Remaining: 530 - 227 = 303 pallets.\\n#### 303",
+    "answer": "303"
+  },
+  {
+    "id": "gsm8k-0075",
+    "problem": "A distribution warehouse starts with 537 pallets of merchandise. Workers ship out 230 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 537 pallets.\\n2. Dispatched count: 230 pallets.\\n3. Remaining: 537 - 230 = 307 pallets.\\n#### 307",
+    "answer": "307"
+  },
+  {
+    "id": "gsm8k-0076",
+    "problem": "A distribution warehouse starts with 544 pallets of merchandise. Workers ship out 233 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 544 pallets.\\n2. Dispatched count: 233 pallets.\\n3. Remaining: 544 - 233 = 311 pallets.\\n#### 311",
+    "answer": "311"
+  },
+  {
+    "id": "gsm8k-0077",
+    "problem": "A distribution warehouse starts with 551 pallets of merchandise. Workers ship out 236 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 551 pallets.\\n2. Dispatched count: 236 pallets.\\n3. Remaining: 551 - 236 = 315 pallets.\\n#### 315",
+    "answer": "315"
+  },
+  {
+    "id": "gsm8k-0078",
+    "problem": "A distribution warehouse starts with 558 pallets of merchandise. Workers ship out 239 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 558 pallets.\\n2. Dispatched count: 239 pallets.\\n3. Remaining: 558 - 239 = 319 pallets.\\n#### 319",
+    "answer": "319"
+  },
+  {
+    "id": "gsm8k-0079",
+    "problem": "A distribution warehouse starts with 565 pallets of merchandise. Workers ship out 242 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 565 pallets.\\n2. Dispatched count: 242 pallets.\\n3. Remaining: 565 - 242 = 323 pallets.\\n#### 323",
+    "answer": "323"
+  },
+  {
+    "id": "gsm8k-0080",
+    "problem": "A distribution warehouse starts with 572 pallets of merchandise. Workers ship out 245 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 572 pallets.\\n2. Dispatched count: 245 pallets.\\n3. Remaining: 572 - 245 = 327 pallets.\\n#### 327",
+    "answer": "327"
+  },
+  {
+    "id": "gsm8k-0081",
+    "problem": "A distribution warehouse starts with 579 pallets of merchandise. Workers ship out 248 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 579 pallets.\\n2. Dispatched count: 248 pallets.\\n3. Remaining: 579 - 248 = 331 pallets.\\n#### 331",
+    "answer": "331"
+  },
+  {
+    "id": "gsm8k-0082",
+    "problem": "A distribution warehouse starts with 586 pallets of merchandise. Workers ship out 251 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 586 pallets.\\n2. Dispatched count: 251 pallets.\\n3. Remaining: 586 - 251 = 335 pallets.\\n#### 335",
+    "answer": "335"
+  },
+  {
+    "id": "gsm8k-0083",
+    "problem": "A distribution warehouse starts with 593 pallets of merchandise. Workers ship out 254 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 593 pallets.\\n2. Dispatched count: 254 pallets.\\n3. Remaining: 593 - 254 = 339 pallets.\\n#### 339",
+    "answer": "339"
+  },
+  {
+    "id": "gsm8k-0084",
+    "problem": "A distribution warehouse starts with 600 pallets of merchandise. Workers ship out 257 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 600 pallets.\\n2. Dispatched count: 257 pallets.\\n3. Remaining: 600 - 257 = 343 pallets.\\n#### 343",
+    "answer": "343"
+  },
+  {
+    "id": "gsm8k-0085",
+    "problem": "A distribution warehouse starts with 607 pallets of merchandise. Workers ship out 260 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 607 pallets.\\n2. Dispatched count: 260 pallets.\\n3. Remaining: 607 - 260 = 347 pallets.\\n#### 347",
+    "answer": "347"
+  },
+  {
+    "id": "gsm8k-0086",
+    "problem": "A distribution warehouse starts with 614 pallets of merchandise. Workers ship out 263 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 614 pallets.\\n2. Dispatched count: 263 pallets.\\n3. Remaining: 614 - 263 = 351 pallets.\\n#### 351",
+    "answer": "351"
+  },
+  {
+    "id": "gsm8k-0087",
+    "problem": "A distribution warehouse starts with 621 pallets of merchandise. Workers ship out 266 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 621 pallets.\\n2. Dispatched count: 266 pallets.\\n3. Remaining: 621 - 266 = 355 pallets.\\n#### 355",
+    "answer": "355"
+  },
+  {
+    "id": "gsm8k-0088",
+    "problem": "A distribution warehouse starts with 628 pallets of merchandise. Workers ship out 269 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 628 pallets.\\n2. Dispatched count: 269 pallets.\\n3. Remaining: 628 - 269 = 359 pallets.\\n#### 359",
+    "answer": "359"
+  },
+  {
+    "id": "gsm8k-0089",
+    "problem": "A distribution warehouse starts with 635 pallets of merchandise. Workers ship out 272 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 635 pallets.\\n2. Dispatched count: 272 pallets.\\n3. Remaining: 635 - 272 = 363 pallets.\\n#### 363",
+    "answer": "363"
+  },
+  {
+    "id": "gsm8k-0090",
+    "problem": "A distribution warehouse starts with 642 pallets of merchandise. Workers ship out 275 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 642 pallets.\\n2. Dispatched count: 275 pallets.\\n3. Remaining: 642 - 275 = 367 pallets.\\n#### 367",
+    "answer": "367"
+  },
+  {
+    "id": "gsm8k-0091",
+    "problem": "A distribution warehouse starts with 649 pallets of merchandise. Workers ship out 278 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 649 pallets.\\n2. Dispatched count: 278 pallets.\\n3. Remaining: 649 - 278 = 371 pallets.\\n#### 371",
+    "answer": "371"
+  },
+  {
+    "id": "gsm8k-0092",
+    "problem": "A distribution warehouse starts with 656 pallets of merchandise. Workers ship out 281 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 656 pallets.\\n2. Dispatched count: 281 pallets.\\n3. Remaining: 656 - 281 = 375 pallets.\\n#### 375",
+    "answer": "375"
+  },
+  {
+    "id": "gsm8k-0093",
+    "problem": "A distribution warehouse starts with 663 pallets of merchandise. Workers ship out 284 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 663 pallets.\\n2. Dispatched count: 284 pallets.\\n3. Remaining: 663 - 284 = 379 pallets.\\n#### 379",
+    "answer": "379"
+  },
+  {
+    "id": "gsm8k-0094",
+    "problem": "A distribution warehouse starts with 670 pallets of merchandise. Workers ship out 287 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 670 pallets.\\n2. Dispatched count: 287 pallets.\\n3. Remaining: 670 - 287 = 383 pallets.\\n#### 383",
+    "answer": "383"
+  },
+  {
+    "id": "gsm8k-0095",
+    "problem": "A distribution warehouse starts with 677 pallets of merchandise. Workers ship out 290 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 677 pallets.\\n2. Dispatched count: 290 pallets.\\n3. Remaining: 677 - 290 = 387 pallets.\\n#### 387",
+    "answer": "387"
+  },
+  {
+    "id": "gsm8k-0096",
+    "problem": "A distribution warehouse starts with 684 pallets of merchandise. Workers ship out 293 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 684 pallets.\\n2. Dispatched count: 293 pallets.\\n3. Remaining: 684 - 293 = 391 pallets.\\n#### 391",
+    "answer": "391"
+  },
+  {
+    "id": "gsm8k-0097",
+    "problem": "A distribution warehouse starts with 691 pallets of merchandise. Workers ship out 296 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 691 pallets.\\n2. Dispatched count: 296 pallets.\\n3. Remaining: 691 - 296 = 395 pallets.\\n#### 395",
+    "answer": "395"
+  },
+  {
+    "id": "gsm8k-0098",
+    "problem": "A distribution warehouse starts with 698 pallets of merchandise. Workers ship out 299 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 698 pallets.\\n2. Dispatched count: 299 pallets.\\n3. Remaining: 698 - 299 = 399 pallets.\\n#### 399",
+    "answer": "399"
+  },
+  {
+    "id": "gsm8k-0099",
+    "problem": "A distribution warehouse starts with 705 pallets of merchandise. Workers ship out 302 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 705 pallets.\\n2. Dispatched count: 302 pallets.\\n3. Remaining: 705 - 302 = 403 pallets.\\n#### 403",
+    "answer": "403"
+  },
+  {
+    "id": "gsm8k-0100",
+    "problem": "A distribution warehouse starts with 712 pallets of merchandise. Workers ship out 305 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 712 pallets.\\n2. Dispatched count: 305 pallets.\\n3. Remaining: 712 - 305 = 407 pallets.\\n#### 407",
+    "answer": "407"
+  },
+  {
+    "id": "gsm8k-0101",
+    "problem": "A distribution warehouse starts with 719 pallets of merchandise. Workers ship out 308 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 719 pallets.\\n2. Dispatched count: 308 pallets.\\n3. Remaining: 719 - 308 = 411 pallets.\\n#### 411",
+    "answer": "411"
+  },
+  {
+    "id": "gsm8k-0102",
+    "problem": "A distribution warehouse starts with 726 pallets of merchandise. Workers ship out 311 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 726 pallets.\\n2. Dispatched count: 311 pallets.\\n3. Remaining: 726 - 311 = 415 pallets.\\n#### 415",
+    "answer": "415"
+  },
+  {
+    "id": "gsm8k-0103",
+    "problem": "A distribution warehouse starts with 733 pallets of merchandise. Workers ship out 314 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 733 pallets.\\n2. Dispatched count: 314 pallets.\\n3. Remaining: 733 - 314 = 419 pallets.\\n#### 419",
+    "answer": "419"
+  },
+  {
+    "id": "gsm8k-0104",
+    "problem": "A distribution warehouse starts with 740 pallets of merchandise. Workers ship out 317 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 740 pallets.\\n2. Dispatched count: 317 pallets.\\n3. Remaining: 740 - 317 = 423 pallets.\\n#### 423",
+    "answer": "423"
+  },
+  {
+    "id": "gsm8k-0105",
+    "problem": "A distribution warehouse starts with 747 pallets of merchandise. Workers ship out 320 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 747 pallets.\\n2. Dispatched count: 320 pallets.\\n3. Remaining: 747 - 320 = 427 pallets.\\n#### 427",
+    "answer": "427"
+  },
+  {
+    "id": "gsm8k-0106",
+    "problem": "A distribution warehouse starts with 754 pallets of merchandise. Workers ship out 323 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 754 pallets.\\n2. Dispatched count: 323 pallets.\\n3. Remaining: 754 - 323 = 431 pallets.\\n#### 431",
+    "answer": "431"
+  },
+  {
+    "id": "gsm8k-0107",
+    "problem": "A distribution warehouse starts with 761 pallets of merchandise. Workers ship out 326 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 761 pallets.\\n2. Dispatched count: 326 pallets.\\n3. Remaining: 761 - 326 = 435 pallets.\\n#### 435",
+    "answer": "435"
+  },
+  {
+    "id": "gsm8k-0108",
+    "problem": "A distribution warehouse starts with 768 pallets of merchandise. Workers ship out 329 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 768 pallets.\\n2. Dispatched count: 329 pallets.\\n3. Remaining: 768 - 329 = 439 pallets.\\n#### 439",
+    "answer": "439"
+  },
+  {
+    "id": "gsm8k-0109",
+    "problem": "A distribution warehouse starts with 775 pallets of merchandise. Workers ship out 332 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 775 pallets.\\n2. Dispatched count: 332 pallets.\\n3. Remaining: 775 - 332 = 443 pallets.\\n#### 443",
+    "answer": "443"
+  },
+  {
+    "id": "gsm8k-0110",
+    "problem": "A distribution warehouse starts with 782 pallets of merchandise. Workers ship out 335 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 782 pallets.\\n2. Dispatched count: 335 pallets.\\n3. Remaining: 782 - 335 = 447 pallets.\\n#### 447",
+    "answer": "447"
+  },
+  {
+    "id": "gsm8k-0111",
+    "problem": "A distribution warehouse starts with 789 pallets of merchandise. Workers ship out 338 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 789 pallets.\\n2. Dispatched count: 338 pallets.\\n3. Remaining: 789 - 338 = 451 pallets.\\n#### 451",
+    "answer": "451"
+  },
+  {
+    "id": "gsm8k-0112",
+    "problem": "A distribution warehouse starts with 796 pallets of merchandise. Workers ship out 341 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 796 pallets.\\n2. Dispatched count: 341 pallets.\\n3. Remaining: 796 - 341 = 455 pallets.\\n#### 455",
+    "answer": "455"
+  },
+  {
+    "id": "gsm8k-0113",
+    "problem": "A distribution warehouse starts with 803 pallets of merchandise. Workers ship out 344 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 803 pallets.\\n2. Dispatched count: 344 pallets.\\n3. Remaining: 803 - 344 = 459 pallets.\\n#### 459",
+    "answer": "459"
+  },
+  {
+    "id": "gsm8k-0114",
+    "problem": "A distribution warehouse starts with 810 pallets of merchandise. Workers ship out 347 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 810 pallets.\\n2. Dispatched count: 347 pallets.\\n3. Remaining: 810 - 347 = 463 pallets.\\n#### 463",
+    "answer": "463"
+  },
+  {
+    "id": "gsm8k-0115",
+    "problem": "A distribution warehouse starts with 817 pallets of merchandise. Workers ship out 350 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 817 pallets.\\n2. Dispatched count: 350 pallets.\\n3. Remaining: 817 - 350 = 467 pallets.\\n#### 467",
+    "answer": "467"
+  },
+  {
+    "id": "gsm8k-0116",
+    "problem": "A distribution warehouse starts with 824 pallets of merchandise. Workers ship out 353 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 824 pallets.\\n2. Dispatched count: 353 pallets.\\n3. Remaining: 824 - 353 = 471 pallets.\\n#### 471",
+    "answer": "471"
+  },
+  {
+    "id": "gsm8k-0117",
+    "problem": "A distribution warehouse starts with 831 pallets of merchandise. Workers ship out 356 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 831 pallets.\\n2. Dispatched count: 356 pallets.\\n3. Remaining: 831 - 356 = 475 pallets.\\n#### 475",
+    "answer": "475"
+  },
+  {
+    "id": "gsm8k-0118",
+    "problem": "A distribution warehouse starts with 838 pallets of merchandise. Workers ship out 359 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 838 pallets.\\n2. Dispatched count: 359 pallets.\\n3. Remaining: 838 - 359 = 479 pallets.\\n#### 479",
+    "answer": "479"
+  },
+  {
+    "id": "gsm8k-0119",
+    "problem": "A distribution warehouse starts with 845 pallets of merchandise. Workers ship out 362 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 845 pallets.\\n2. Dispatched count: 362 pallets.\\n3. Remaining: 845 - 362 = 483 pallets.\\n#### 483",
+    "answer": "483"
+  },
+  {
+    "id": "gsm8k-0120",
+    "problem": "A distribution warehouse starts with 852 pallets of merchandise. Workers ship out 365 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 852 pallets.\\n2. Dispatched count: 365 pallets.\\n3. Remaining: 852 - 365 = 487 pallets.\\n#### 487",
+    "answer": "487"
+  },
+  {
+    "id": "gsm8k-0121",
+    "problem": "A distribution warehouse starts with 859 pallets of merchandise. Workers ship out 368 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 859 pallets.\\n2. Dispatched count: 368 pallets.\\n3. Remaining: 859 - 368 = 491 pallets.\\n#### 491",
+    "answer": "491"
+  },
+  {
+    "id": "gsm8k-0122",
+    "problem": "A distribution warehouse starts with 866 pallets of merchandise. Workers ship out 371 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 866 pallets.\\n2. Dispatched count: 371 pallets.\\n3. Remaining: 866 - 371 = 495 pallets.\\n#### 495",
+    "answer": "495"
+  },
+  {
+    "id": "gsm8k-0123",
+    "problem": "A distribution warehouse starts with 873 pallets of merchandise. Workers ship out 374 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 873 pallets.\\n2. Dispatched count: 374 pallets.\\n3. Remaining: 873 - 374 = 499 pallets.\\n#### 499",
+    "answer": "499"
+  },
+  {
+    "id": "gsm8k-0124",
+    "problem": "A distribution warehouse starts with 880 pallets of merchandise. Workers ship out 377 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 880 pallets.\\n2. Dispatched count: 377 pallets.\\n3. Remaining: 880 - 377 = 503 pallets.\\n#### 503",
+    "answer": "503"
+  },
+  {
+    "id": "gsm8k-0125",
+    "problem": "A distribution warehouse starts with 887 pallets of merchandise. Workers ship out 380 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 887 pallets.\\n2. Dispatched count: 380 pallets.\\n3. Remaining: 887 - 380 = 507 pallets.\\n#### 507",
+    "answer": "507"
+  },
+  {
+    "id": "gsm8k-0126",
+    "problem": "A distribution warehouse starts with 894 pallets of merchandise. Workers ship out 383 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 894 pallets.\\n2. Dispatched count: 383 pallets.\\n3. Remaining: 894 - 383 = 511 pallets.\\n#### 511",
+    "answer": "511"
+  },
+  {
+    "id": "gsm8k-0127",
+    "problem": "A distribution warehouse starts with 901 pallets of merchandise. Workers ship out 386 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 901 pallets.\\n2. Dispatched count: 386 pallets.\\n3. Remaining: 901 - 386 = 515 pallets.\\n#### 515",
+    "answer": "515"
+  },
+  {
+    "id": "gsm8k-0128",
+    "problem": "A distribution warehouse starts with 908 pallets of merchandise. Workers ship out 389 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 908 pallets.\\n2. Dispatched count: 389 pallets.\\n3. Remaining: 908 - 389 = 519 pallets.\\n#### 519",
+    "answer": "519"
+  },
+  {
+    "id": "gsm8k-0129",
+    "problem": "A distribution warehouse starts with 915 pallets of merchandise. Workers ship out 392 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 915 pallets.\\n2. Dispatched count: 392 pallets.\\n3. Remaining: 915 - 392 = 523 pallets.\\n#### 523",
+    "answer": "523"
+  },
+  {
+    "id": "gsm8k-0130",
+    "problem": "A distribution warehouse starts with 922 pallets of merchandise. Workers ship out 395 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 922 pallets.\\n2. Dispatched count: 395 pallets.\\n3. Remaining: 922 - 395 = 527 pallets.\\n#### 527",
+    "answer": "527"
+  },
+  {
+    "id": "gsm8k-0131",
+    "problem": "A distribution warehouse starts with 929 pallets of merchandise. Workers ship out 398 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 929 pallets.\\n2. Dispatched count: 398 pallets.\\n3. Remaining: 929 - 398 = 531 pallets.\\n#### 531",
+    "answer": "531"
+  },
+  {
+    "id": "gsm8k-0132",
+    "problem": "A distribution warehouse starts with 936 pallets of merchandise. Workers ship out 401 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 936 pallets.\\n2. Dispatched count: 401 pallets.\\n3. Remaining: 936 - 401 = 535 pallets.\\n#### 535",
+    "answer": "535"
+  },
+  {
+    "id": "gsm8k-0133",
+    "problem": "A distribution warehouse starts with 943 pallets of merchandise. Workers ship out 404 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 943 pallets.\\n2. Dispatched count: 404 pallets.\\n3. Remaining: 943 - 404 = 539 pallets.\\n#### 539",
+    "answer": "539"
+  },
+  {
+    "id": "gsm8k-0134",
+    "problem": "A distribution warehouse starts with 950 pallets of merchandise. Workers ship out 407 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 950 pallets.\\n2. Dispatched count: 407 pallets.\\n3. Remaining: 950 - 407 = 543 pallets.\\n#### 543",
+    "answer": "543"
+  },
+  {
+    "id": "gsm8k-0135",
+    "problem": "A distribution warehouse starts with 957 pallets of merchandise. Workers ship out 410 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 957 pallets.\\n2. Dispatched count: 410 pallets.\\n3. Remaining: 957 - 410 = 547 pallets.\\n#### 547",
+    "answer": "547"
+  },
+  {
+    "id": "gsm8k-0136",
+    "problem": "A distribution warehouse starts with 964 pallets of merchandise. Workers ship out 413 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 964 pallets.\\n2. Dispatched count: 413 pallets.\\n3. Remaining: 964 - 413 = 551 pallets.\\n#### 551",
+    "answer": "551"
+  },
+  {
+    "id": "gsm8k-0137",
+    "problem": "A distribution warehouse starts with 971 pallets of merchandise. Workers ship out 416 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 971 pallets.\\n2. Dispatched count: 416 pallets.\\n3. Remaining: 971 - 416 = 555 pallets.\\n#### 555",
+    "answer": "555"
+  },
+  {
+    "id": "gsm8k-0138",
+    "problem": "A distribution warehouse starts with 978 pallets of merchandise. Workers ship out 419 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 978 pallets.\\n2. Dispatched count: 419 pallets.\\n3. Remaining: 978 - 419 = 559 pallets.\\n#### 559",
+    "answer": "559"
+  },
+  {
+    "id": "gsm8k-0139",
+    "problem": "A distribution warehouse starts with 985 pallets of merchandise. Workers ship out 422 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 985 pallets.\\n2. Dispatched count: 422 pallets.\\n3. Remaining: 985 - 422 = 563 pallets.\\n#### 563",
+    "answer": "563"
+  },
+  {
+    "id": "gsm8k-0140",
+    "problem": "A distribution warehouse starts with 992 pallets of merchandise. Workers ship out 425 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 992 pallets.\\n2. Dispatched count: 425 pallets.\\n3. Remaining: 992 - 425 = 567 pallets.\\n#### 567",
+    "answer": "567"
+  },
+  {
+    "id": "gsm8k-0141",
+    "problem": "A distribution warehouse starts with 999 pallets of merchandise. Workers ship out 428 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 999 pallets.\\n2. Dispatched count: 428 pallets.\\n3. Remaining: 999 - 428 = 571 pallets.\\n#### 571",
+    "answer": "571"
+  },
+  {
+    "id": "gsm8k-0142",
+    "problem": "A distribution warehouse starts with 1006 pallets of merchandise. Workers ship out 431 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1006 pallets.\\n2. Dispatched count: 431 pallets.\\n3. Remaining: 1006 - 431 = 575 pallets.\\n#### 575",
+    "answer": "575"
+  },
+  {
+    "id": "gsm8k-0143",
+    "problem": "A distribution warehouse starts with 1013 pallets of merchandise. Workers ship out 434 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1013 pallets.\\n2. Dispatched count: 434 pallets.\\n3. Remaining: 1013 - 434 = 579 pallets.\\n#### 579",
+    "answer": "579"
+  },
+  {
+    "id": "gsm8k-0144",
+    "problem": "A distribution warehouse starts with 1020 pallets of merchandise. Workers ship out 437 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1020 pallets.\\n2. Dispatched count: 437 pallets.\\n3. Remaining: 1020 - 437 = 583 pallets.\\n#### 583",
+    "answer": "583"
+  },
+  {
+    "id": "gsm8k-0145",
+    "problem": "A distribution warehouse starts with 1027 pallets of merchandise. Workers ship out 440 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1027 pallets.\\n2. Dispatched count: 440 pallets.\\n3. Remaining: 1027 - 440 = 587 pallets.\\n#### 587",
+    "answer": "587"
+  },
+  {
+    "id": "gsm8k-0146",
+    "problem": "A distribution warehouse starts with 1034 pallets of merchandise. Workers ship out 443 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1034 pallets.\\n2. Dispatched count: 443 pallets.\\n3. Remaining: 1034 - 443 = 591 pallets.\\n#### 591",
+    "answer": "591"
+  },
+  {
+    "id": "gsm8k-0147",
+    "problem": "A distribution warehouse starts with 1041 pallets of merchandise. Workers ship out 446 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1041 pallets.\\n2. Dispatched count: 446 pallets.\\n3. Remaining: 1041 - 446 = 595 pallets.\\n#### 595",
+    "answer": "595"
+  },
+  {
+    "id": "gsm8k-0148",
+    "problem": "A distribution warehouse starts with 1048 pallets of merchandise. Workers ship out 449 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1048 pallets.\\n2. Dispatched count: 449 pallets.\\n3. Remaining: 1048 - 449 = 599 pallets.\\n#### 599",
+    "answer": "599"
+  },
+  {
+    "id": "gsm8k-0149",
+    "problem": "A distribution warehouse starts with 1055 pallets of merchandise. Workers ship out 452 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1055 pallets.\\n2. Dispatched count: 452 pallets.\\n3. Remaining: 1055 - 452 = 603 pallets.\\n#### 603",
+    "answer": "603"
+  },
+  {
+    "id": "gsm8k-0150",
+    "problem": "A distribution warehouse starts with 1062 pallets of merchandise. Workers ship out 455 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1062 pallets.\\n2. Dispatched count: 455 pallets.\\n3. Remaining: 1062 - 455 = 607 pallets.\\n#### 607",
+    "answer": "607"
+  },
+  {
+    "id": "gsm8k-0151",
+    "problem": "A distribution warehouse starts with 1069 pallets of merchandise. Workers ship out 458 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1069 pallets.\\n2. Dispatched count: 458 pallets.\\n3. Remaining: 1069 - 458 = 611 pallets.\\n#### 611",
+    "answer": "611"
+  },
+  {
+    "id": "gsm8k-0152",
+    "problem": "A distribution warehouse starts with 1076 pallets of merchandise. Workers ship out 461 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1076 pallets.\\n2. Dispatched count: 461 pallets.\\n3. Remaining: 1076 - 461 = 615 pallets.\\n#### 615",
+    "answer": "615"
+  },
+  {
+    "id": "gsm8k-0153",
+    "problem": "A distribution warehouse starts with 1083 pallets of merchandise. Workers ship out 464 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1083 pallets.\\n2. Dispatched count: 464 pallets.\\n3. Remaining: 1083 - 464 = 619 pallets.\\n#### 619",
+    "answer": "619"
+  },
+  {
+    "id": "gsm8k-0154",
+    "problem": "A distribution warehouse starts with 1090 pallets of merchandise. Workers ship out 467 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1090 pallets.\\n2. Dispatched count: 467 pallets.\\n3. Remaining: 1090 - 467 = 623 pallets.\\n#### 623",
+    "answer": "623"
+  },
+  {
+    "id": "gsm8k-0155",
+    "problem": "A distribution warehouse starts with 1097 pallets of merchandise. Workers ship out 470 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1097 pallets.\\n2. Dispatched count: 470 pallets.\\n3. Remaining: 1097 - 470 = 627 pallets.\\n#### 627",
+    "answer": "627"
+  },
+  {
+    "id": "gsm8k-0156",
+    "problem": "A distribution warehouse starts with 1104 pallets of merchandise. Workers ship out 473 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1104 pallets.\\n2. Dispatched count: 473 pallets.\\n3. Remaining: 1104 - 473 = 631 pallets.\\n#### 631",
+    "answer": "631"
+  },
+  {
+    "id": "gsm8k-0157",
+    "problem": "A distribution warehouse starts with 1111 pallets of merchandise. Workers ship out 476 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1111 pallets.\\n2. Dispatched count: 476 pallets.\\n3. Remaining: 1111 - 476 = 635 pallets.\\n#### 635",
+    "answer": "635"
+  },
+  {
+    "id": "gsm8k-0158",
+    "problem": "A distribution warehouse starts with 1118 pallets of merchandise. Workers ship out 479 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1118 pallets.\\n2. Dispatched count: 479 pallets.\\n3. Remaining: 1118 - 479 = 639 pallets.\\n#### 639",
+    "answer": "639"
+  },
+  {
+    "id": "gsm8k-0159",
+    "problem": "A distribution warehouse starts with 1125 pallets of merchandise. Workers ship out 482 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1125 pallets.\\n2. Dispatched count: 482 pallets.\\n3. Remaining: 1125 - 482 = 643 pallets.\\n#### 643",
+    "answer": "643"
+  },
+  {
+    "id": "gsm8k-0160",
+    "problem": "A distribution warehouse starts with 1132 pallets of merchandise. Workers ship out 485 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1132 pallets.\\n2. Dispatched count: 485 pallets.\\n3. Remaining: 1132 - 485 = 647 pallets.\\n#### 647",
+    "answer": "647"
+  },
+  {
+    "id": "gsm8k-0161",
+    "problem": "A distribution warehouse starts with 1139 pallets of merchandise. Workers ship out 488 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1139 pallets.\\n2. Dispatched count: 488 pallets.\\n3. Remaining: 1139 - 488 = 651 pallets.\\n#### 651",
+    "answer": "651"
+  },
+  {
+    "id": "gsm8k-0162",
+    "problem": "A distribution warehouse starts with 1146 pallets of merchandise. Workers ship out 491 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1146 pallets.\\n2. Dispatched count: 491 pallets.\\n3. Remaining: 1146 - 491 = 655 pallets.\\n#### 655",
+    "answer": "655"
+  },
+  {
+    "id": "gsm8k-0163",
+    "problem": "A distribution warehouse starts with 1153 pallets of merchandise. Workers ship out 494 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1153 pallets.\\n2. Dispatched count: 494 pallets.\\n3. Remaining: 1153 - 494 = 659 pallets.\\n#### 659",
+    "answer": "659"
+  },
+  {
+    "id": "gsm8k-0164",
+    "problem": "A distribution warehouse starts with 1160 pallets of merchandise. Workers ship out 497 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1160 pallets.\\n2. Dispatched count: 497 pallets.\\n3. Remaining: 1160 - 497 = 663 pallets.\\n#### 663",
+    "answer": "663"
+  },
+  {
+    "id": "gsm8k-0165",
+    "problem": "A distribution warehouse starts with 1167 pallets of merchandise. Workers ship out 500 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1167 pallets.\\n2. Dispatched count: 500 pallets.\\n3. Remaining: 1167 - 500 = 667 pallets.\\n#### 667",
+    "answer": "667"
+  },
+  {
+    "id": "gsm8k-0166",
+    "problem": "A distribution warehouse starts with 1174 pallets of merchandise. Workers ship out 503 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1174 pallets.\\n2. Dispatched count: 503 pallets.\\n3. Remaining: 1174 - 503 = 671 pallets.\\n#### 671",
+    "answer": "671"
+  },
+  {
+    "id": "gsm8k-0167",
+    "problem": "A distribution warehouse starts with 1181 pallets of merchandise. Workers ship out 506 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1181 pallets.\\n2. Dispatched count: 506 pallets.\\n3. Remaining: 1181 - 506 = 675 pallets.\\n#### 675",
+    "answer": "675"
+  },
+  {
+    "id": "gsm8k-0168",
+    "problem": "A distribution warehouse starts with 1188 pallets of merchandise. Workers ship out 509 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1188 pallets.\\n2. Dispatched count: 509 pallets.\\n3. Remaining: 1188 - 509 = 679 pallets.\\n#### 679",
+    "answer": "679"
+  },
+  {
+    "id": "gsm8k-0169",
+    "problem": "A distribution warehouse starts with 1195 pallets of merchandise. Workers ship out 512 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1195 pallets.\\n2. Dispatched count: 512 pallets.\\n3. Remaining: 1195 - 512 = 683 pallets.\\n#### 683",
+    "answer": "683"
+  },
+  {
+    "id": "gsm8k-0170",
+    "problem": "A distribution warehouse starts with 1202 pallets of merchandise. Workers ship out 515 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1202 pallets.\\n2. Dispatched count: 515 pallets.\\n3. Remaining: 1202 - 515 = 687 pallets.\\n#### 687",
+    "answer": "687"
+  },
+  {
+    "id": "gsm8k-0171",
+    "problem": "A distribution warehouse starts with 1209 pallets of merchandise. Workers ship out 518 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1209 pallets.\\n2. Dispatched count: 518 pallets.\\n3. Remaining: 1209 - 518 = 691 pallets.\\n#### 691",
+    "answer": "691"
+  },
+  {
+    "id": "gsm8k-0172",
+    "problem": "A distribution warehouse starts with 1216 pallets of merchandise. Workers ship out 521 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1216 pallets.\\n2. Dispatched count: 521 pallets.\\n3. Remaining: 1216 - 521 = 695 pallets.\\n#### 695",
+    "answer": "695"
+  },
+  {
+    "id": "gsm8k-0173",
+    "problem": "A distribution warehouse starts with 1223 pallets of merchandise. Workers ship out 524 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1223 pallets.\\n2. Dispatched count: 524 pallets.\\n3. Remaining: 1223 - 524 = 699 pallets.\\n#### 699",
+    "answer": "699"
+  },
+  {
+    "id": "gsm8k-0174",
+    "problem": "A distribution warehouse starts with 1230 pallets of merchandise. Workers ship out 527 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1230 pallets.\\n2. Dispatched count: 527 pallets.\\n3. Remaining: 1230 - 527 = 703 pallets.\\n#### 703",
+    "answer": "703"
+  },
+  {
+    "id": "gsm8k-0175",
+    "problem": "A distribution warehouse starts with 1237 pallets of merchandise. Workers ship out 530 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1237 pallets.\\n2. Dispatched count: 530 pallets.\\n3. Remaining: 1237 - 530 = 707 pallets.\\n#### 707",
+    "answer": "707"
+  },
+  {
+    "id": "gsm8k-0176",
+    "problem": "A distribution warehouse starts with 1244 pallets of merchandise. Workers ship out 533 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1244 pallets.\\n2. Dispatched count: 533 pallets.\\n3. Remaining: 1244 - 533 = 711 pallets.\\n#### 711",
+    "answer": "711"
+  },
+  {
+    "id": "gsm8k-0177",
+    "problem": "A distribution warehouse starts with 1251 pallets of merchandise. Workers ship out 536 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1251 pallets.\\n2. Dispatched count: 536 pallets.\\n3. Remaining: 1251 - 536 = 715 pallets.\\n#### 715",
+    "answer": "715"
+  },
+  {
+    "id": "gsm8k-0178",
+    "problem": "A distribution warehouse starts with 1258 pallets of merchandise. Workers ship out 539 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1258 pallets.\\n2. Dispatched count: 539 pallets.\\n3. Remaining: 1258 - 539 = 719 pallets.\\n#### 719",
+    "answer": "719"
+  },
+  {
+    "id": "gsm8k-0179",
+    "problem": "A distribution warehouse starts with 1265 pallets of merchandise. Workers ship out 542 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1265 pallets.\\n2. Dispatched count: 542 pallets.\\n3. Remaining: 1265 - 542 = 723 pallets.\\n#### 723",
+    "answer": "723"
+  },
+  {
+    "id": "gsm8k-0180",
+    "problem": "A distribution warehouse starts with 1272 pallets of merchandise. Workers ship out 545 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1272 pallets.\\n2. Dispatched count: 545 pallets.\\n3. Remaining: 1272 - 545 = 727 pallets.\\n#### 727",
+    "answer": "727"
+  },
+  {
+    "id": "gsm8k-0181",
+    "problem": "A distribution warehouse starts with 1279 pallets of merchandise. Workers ship out 548 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1279 pallets.\\n2. Dispatched count: 548 pallets.\\n3. Remaining: 1279 - 548 = 731 pallets.\\n#### 731",
+    "answer": "731"
+  },
+  {
+    "id": "gsm8k-0182",
+    "problem": "A distribution warehouse starts with 1286 pallets of merchandise. Workers ship out 551 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1286 pallets.\\n2. Dispatched count: 551 pallets.\\n3. Remaining: 1286 - 551 = 735 pallets.\\n#### 735",
+    "answer": "735"
+  },
+  {
+    "id": "gsm8k-0183",
+    "problem": "A distribution warehouse starts with 1293 pallets of merchandise. Workers ship out 554 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1293 pallets.\\n2. Dispatched count: 554 pallets.\\n3. Remaining: 1293 - 554 = 739 pallets.\\n#### 739",
+    "answer": "739"
+  },
+  {
+    "id": "gsm8k-0184",
+    "problem": "A distribution warehouse starts with 1300 pallets of merchandise. Workers ship out 557 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1300 pallets.\\n2. Dispatched count: 557 pallets.\\n3. Remaining: 1300 - 557 = 743 pallets.\\n#### 743",
+    "answer": "743"
+  },
+  {
+    "id": "gsm8k-0185",
+    "problem": "A distribution warehouse starts with 1307 pallets of merchandise. Workers ship out 560 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1307 pallets.\\n2. Dispatched count: 560 pallets.\\n3. Remaining: 1307 - 560 = 747 pallets.\\n#### 747",
+    "answer": "747"
+  },
+  {
+    "id": "gsm8k-0186",
+    "problem": "A distribution warehouse starts with 1314 pallets of merchandise. Workers ship out 563 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1314 pallets.\\n2. Dispatched count: 563 pallets.\\n3. Remaining: 1314 - 563 = 751 pallets.\\n#### 751",
+    "answer": "751"
+  },
+  {
+    "id": "gsm8k-0187",
+    "problem": "A distribution warehouse starts with 1321 pallets of merchandise. Workers ship out 566 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1321 pallets.\\n2. Dispatched count: 566 pallets.\\n3. Remaining: 1321 - 566 = 755 pallets.\\n#### 755",
+    "answer": "755"
+  },
+  {
+    "id": "gsm8k-0188",
+    "problem": "A distribution warehouse starts with 1328 pallets of merchandise. Workers ship out 569 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1328 pallets.\\n2. Dispatched count: 569 pallets.\\n3. Remaining: 1328 - 569 = 759 pallets.\\n#### 759",
+    "answer": "759"
+  },
+  {
+    "id": "gsm8k-0189",
+    "problem": "A distribution warehouse starts with 1335 pallets of merchandise. Workers ship out 572 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1335 pallets.\\n2. Dispatched count: 572 pallets.\\n3. Remaining: 1335 - 572 = 763 pallets.\\n#### 763",
+    "answer": "763"
+  },
+  {
+    "id": "gsm8k-0190",
+    "problem": "A distribution warehouse starts with 1342 pallets of merchandise. Workers ship out 575 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1342 pallets.\\n2. Dispatched count: 575 pallets.\\n3. Remaining: 1342 - 575 = 767 pallets.\\n#### 767",
+    "answer": "767"
+  },
+  {
+    "id": "gsm8k-0191",
+    "problem": "A distribution warehouse starts with 1349 pallets of merchandise. Workers ship out 578 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1349 pallets.\\n2. Dispatched count: 578 pallets.\\n3. Remaining: 1349 - 578 = 771 pallets.\\n#### 771",
+    "answer": "771"
+  },
+  {
+    "id": "gsm8k-0192",
+    "problem": "A distribution warehouse starts with 1356 pallets of merchandise. Workers ship out 581 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1356 pallets.\\n2. Dispatched count: 581 pallets.\\n3. Remaining: 1356 - 581 = 775 pallets.\\n#### 775",
+    "answer": "775"
+  },
+  {
+    "id": "gsm8k-0193",
+    "problem": "A distribution warehouse starts with 1363 pallets of merchandise. Workers ship out 584 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1363 pallets.\\n2. Dispatched count: 584 pallets.\\n3. Remaining: 1363 - 584 = 779 pallets.\\n#### 779",
+    "answer": "779"
+  },
+  {
+    "id": "gsm8k-0194",
+    "problem": "A distribution warehouse starts with 1370 pallets of merchandise. Workers ship out 587 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1370 pallets.\\n2. Dispatched count: 587 pallets.\\n3. Remaining: 1370 - 587 = 783 pallets.\\n#### 783",
+    "answer": "783"
+  },
+  {
+    "id": "gsm8k-0195",
+    "problem": "A distribution warehouse starts with 1377 pallets of merchandise. Workers ship out 590 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1377 pallets.\\n2. Dispatched count: 590 pallets.\\n3. Remaining: 1377 - 590 = 787 pallets.\\n#### 787",
+    "answer": "787"
+  },
+  {
+    "id": "gsm8k-0196",
+    "problem": "A distribution warehouse starts with 1384 pallets of merchandise. Workers ship out 593 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1384 pallets.\\n2. Dispatched count: 593 pallets.\\n3. Remaining: 1384 - 593 = 791 pallets.\\n#### 791",
+    "answer": "791"
+  },
+  {
+    "id": "gsm8k-0197",
+    "problem": "A distribution warehouse starts with 1391 pallets of merchandise. Workers ship out 596 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1391 pallets.\\n2. Dispatched count: 596 pallets.\\n3. Remaining: 1391 - 596 = 795 pallets.\\n#### 795",
+    "answer": "795"
+  },
+  {
+    "id": "gsm8k-0198",
+    "problem": "A distribution warehouse starts with 1398 pallets of merchandise. Workers ship out 599 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1398 pallets.\\n2. Dispatched count: 599 pallets.\\n3. Remaining: 1398 - 599 = 799 pallets.\\n#### 799",
+    "answer": "799"
+  },
+  {
+    "id": "gsm8k-0199",
+    "problem": "A distribution warehouse starts with 1405 pallets of merchandise. Workers ship out 602 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1405 pallets.\\n2. Dispatched count: 602 pallets.\\n3. Remaining: 1405 - 602 = 803 pallets.\\n#### 803",
+    "answer": "803"
+  },
+  {
+    "id": "gsm8k-0200",
+    "problem": "A distribution warehouse starts with 1412 pallets of merchandise. Workers ship out 605 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1412 pallets.\\n2. Dispatched count: 605 pallets.\\n3. Remaining: 1412 - 605 = 807 pallets.\\n#### 807",
+    "answer": "807"
+  },
+  {
+    "id": "gsm8k-0201",
+    "problem": "A distribution warehouse starts with 1419 pallets of merchandise. Workers ship out 608 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1419 pallets.\\n2. Dispatched count: 608 pallets.\\n3. Remaining: 1419 - 608 = 811 pallets.\\n#### 811",
+    "answer": "811"
+  },
+  {
+    "id": "gsm8k-0202",
+    "problem": "A distribution warehouse starts with 1426 pallets of merchandise. Workers ship out 611 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1426 pallets.\\n2. Dispatched count: 611 pallets.\\n3. Remaining: 1426 - 611 = 815 pallets.\\n#### 815",
+    "answer": "815"
+  },
+  {
+    "id": "gsm8k-0203",
+    "problem": "A distribution warehouse starts with 1433 pallets of merchandise. Workers ship out 614 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1433 pallets.\\n2. Dispatched count: 614 pallets.\\n3. Remaining: 1433 - 614 = 819 pallets.\\n#### 819",
+    "answer": "819"
+  },
+  {
+    "id": "gsm8k-0204",
+    "problem": "A distribution warehouse starts with 1440 pallets of merchandise. Workers ship out 617 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1440 pallets.\\n2. Dispatched count: 617 pallets.\\n3. Remaining: 1440 - 617 = 823 pallets.\\n#### 823",
+    "answer": "823"
+  },
+  {
+    "id": "gsm8k-0205",
+    "problem": "A distribution warehouse starts with 1447 pallets of merchandise. Workers ship out 620 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1447 pallets.\\n2. Dispatched count: 620 pallets.\\n3. Remaining: 1447 - 620 = 827 pallets.\\n#### 827",
+    "answer": "827"
+  },
+  {
+    "id": "gsm8k-0206",
+    "problem": "A distribution warehouse starts with 1454 pallets of merchandise. Workers ship out 623 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1454 pallets.\\n2. Dispatched count: 623 pallets.\\n3. Remaining: 1454 - 623 = 831 pallets.\\n#### 831",
+    "answer": "831"
+  },
+  {
+    "id": "gsm8k-0207",
+    "problem": "A distribution warehouse starts with 1461 pallets of merchandise. Workers ship out 626 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1461 pallets.\\n2. Dispatched count: 626 pallets.\\n3. Remaining: 1461 - 626 = 835 pallets.\\n#### 835",
+    "answer": "835"
+  },
+  {
+    "id": "gsm8k-0208",
+    "problem": "A distribution warehouse starts with 1468 pallets of merchandise. Workers ship out 629 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1468 pallets.\\n2. Dispatched count: 629 pallets.\\n3. Remaining: 1468 - 629 = 839 pallets.\\n#### 839",
+    "answer": "839"
+  },
+  {
+    "id": "gsm8k-0209",
+    "problem": "A distribution warehouse starts with 1475 pallets of merchandise. Workers ship out 632 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1475 pallets.\\n2. Dispatched count: 632 pallets.\\n3. Remaining: 1475 - 632 = 843 pallets.\\n#### 843",
+    "answer": "843"
+  },
+  {
+    "id": "gsm8k-0210",
+    "problem": "A distribution warehouse starts with 1482 pallets of merchandise. Workers ship out 635 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1482 pallets.\\n2. Dispatched count: 635 pallets.\\n3. Remaining: 1482 - 635 = 847 pallets.\\n#### 847",
+    "answer": "847"
+  },
+  {
+    "id": "gsm8k-0211",
+    "problem": "A distribution warehouse starts with 1489 pallets of merchandise. Workers ship out 638 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1489 pallets.\\n2. Dispatched count: 638 pallets.\\n3. Remaining: 1489 - 638 = 851 pallets.\\n#### 851",
+    "answer": "851"
+  },
+  {
+    "id": "gsm8k-0212",
+    "problem": "A distribution warehouse starts with 1496 pallets of merchandise. Workers ship out 641 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1496 pallets.\\n2. Dispatched count: 641 pallets.\\n3. Remaining: 1496 - 641 = 855 pallets.\\n#### 855",
+    "answer": "855"
+  },
+  {
+    "id": "gsm8k-0213",
+    "problem": "A distribution warehouse starts with 1503 pallets of merchandise. Workers ship out 644 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1503 pallets.\\n2. Dispatched count: 644 pallets.\\n3. Remaining: 1503 - 644 = 859 pallets.\\n#### 859",
+    "answer": "859"
+  },
+  {
+    "id": "gsm8k-0214",
+    "problem": "A distribution warehouse starts with 1510 pallets of merchandise. Workers ship out 647 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1510 pallets.\\n2. Dispatched count: 647 pallets.\\n3. Remaining: 1510 - 647 = 863 pallets.\\n#### 863",
+    "answer": "863"
+  },
+  {
+    "id": "gsm8k-0215",
+    "problem": "A distribution warehouse starts with 1517 pallets of merchandise. Workers ship out 650 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1517 pallets.\\n2. Dispatched count: 650 pallets.\\n3. Remaining: 1517 - 650 = 867 pallets.\\n#### 867",
+    "answer": "867"
+  },
+  {
+    "id": "gsm8k-0216",
+    "problem": "A distribution warehouse starts with 1524 pallets of merchandise. Workers ship out 653 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1524 pallets.\\n2. Dispatched count: 653 pallets.\\n3. Remaining: 1524 - 653 = 871 pallets.\\n#### 871",
+    "answer": "871"
+  },
+  {
+    "id": "gsm8k-0217",
+    "problem": "A distribution warehouse starts with 1531 pallets of merchandise. Workers ship out 656 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1531 pallets.\\n2. Dispatched count: 656 pallets.\\n3. Remaining: 1531 - 656 = 875 pallets.\\n#### 875",
+    "answer": "875"
+  },
+  {
+    "id": "gsm8k-0218",
+    "problem": "A distribution warehouse starts with 1538 pallets of merchandise. Workers ship out 659 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1538 pallets.\\n2. Dispatched count: 659 pallets.\\n3. Remaining: 1538 - 659 = 879 pallets.\\n#### 879",
+    "answer": "879"
+  },
+  {
+    "id": "gsm8k-0219",
+    "problem": "A distribution warehouse starts with 1545 pallets of merchandise. Workers ship out 662 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1545 pallets.\\n2. Dispatched count: 662 pallets.\\n3. Remaining: 1545 - 662 = 883 pallets.\\n#### 883",
+    "answer": "883"
+  },
+  {
+    "id": "gsm8k-0220",
+    "problem": "A distribution warehouse starts with 1552 pallets of merchandise. Workers ship out 665 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1552 pallets.\\n2. Dispatched count: 665 pallets.\\n3. Remaining: 1552 - 665 = 887 pallets.\\n#### 887",
+    "answer": "887"
+  },
+  {
+    "id": "gsm8k-0221",
+    "problem": "A distribution warehouse starts with 1559 pallets of merchandise. Workers ship out 668 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1559 pallets.\\n2. Dispatched count: 668 pallets.\\n3. Remaining: 1559 - 668 = 891 pallets.\\n#### 891",
+    "answer": "891"
+  },
+  {
+    "id": "gsm8k-0222",
+    "problem": "A distribution warehouse starts with 1566 pallets of merchandise. Workers ship out 671 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1566 pallets.\\n2. Dispatched count: 671 pallets.\\n3. Remaining: 1566 - 671 = 895 pallets.\\n#### 895",
+    "answer": "895"
+  },
+  {
+    "id": "gsm8k-0223",
+    "problem": "A distribution warehouse starts with 1573 pallets of merchandise. Workers ship out 674 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1573 pallets.\\n2. Dispatched count: 674 pallets.\\n3. Remaining: 1573 - 674 = 899 pallets.\\n#### 899",
+    "answer": "899"
+  },
+  {
+    "id": "gsm8k-0224",
+    "problem": "A distribution warehouse starts with 1580 pallets of merchandise. Workers ship out 677 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1580 pallets.\\n2. Dispatched count: 677 pallets.\\n3. Remaining: 1580 - 677 = 903 pallets.\\n#### 903",
+    "answer": "903"
+  },
+  {
+    "id": "gsm8k-0225",
+    "problem": "A distribution warehouse starts with 1587 pallets of merchandise. Workers ship out 680 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1587 pallets.\\n2. Dispatched count: 680 pallets.\\n3. Remaining: 1587 - 680 = 907 pallets.\\n#### 907",
+    "answer": "907"
+  },
+  {
+    "id": "gsm8k-0226",
+    "problem": "A distribution warehouse starts with 1594 pallets of merchandise. Workers ship out 683 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1594 pallets.\\n2. Dispatched count: 683 pallets.\\n3. Remaining: 1594 - 683 = 911 pallets.\\n#### 911",
+    "answer": "911"
+  },
+  {
+    "id": "gsm8k-0227",
+    "problem": "A distribution warehouse starts with 1601 pallets of merchandise. Workers ship out 686 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1601 pallets.\\n2. Dispatched count: 686 pallets.\\n3. Remaining: 1601 - 686 = 915 pallets.\\n#### 915",
+    "answer": "915"
+  },
+  {
+    "id": "gsm8k-0228",
+    "problem": "A distribution warehouse starts with 1608 pallets of merchandise. Workers ship out 689 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1608 pallets.\\n2. Dispatched count: 689 pallets.\\n3. Remaining: 1608 - 689 = 919 pallets.\\n#### 919",
+    "answer": "919"
+  },
+  {
+    "id": "gsm8k-0229",
+    "problem": "A distribution warehouse starts with 1615 pallets of merchandise. Workers ship out 692 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1615 pallets.\\n2. Dispatched count: 692 pallets.\\n3. Remaining: 1615 - 692 = 923 pallets.\\n#### 923",
+    "answer": "923"
+  },
+  {
+    "id": "gsm8k-0230",
+    "problem": "A distribution warehouse starts with 1622 pallets of merchandise. Workers ship out 695 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1622 pallets.\\n2. Dispatched count: 695 pallets.\\n3. Remaining: 1622 - 695 = 927 pallets.\\n#### 927",
+    "answer": "927"
+  },
+  {
+    "id": "gsm8k-0231",
+    "problem": "A distribution warehouse starts with 1629 pallets of merchandise. Workers ship out 698 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1629 pallets.\\n2. Dispatched count: 698 pallets.\\n3. Remaining: 1629 - 698 = 931 pallets.\\n#### 931",
+    "answer": "931"
+  },
+  {
+    "id": "gsm8k-0232",
+    "problem": "A distribution warehouse starts with 1636 pallets of merchandise. Workers ship out 701 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1636 pallets.\\n2. Dispatched count: 701 pallets.\\n3. Remaining: 1636 - 701 = 935 pallets.\\n#### 935",
+    "answer": "935"
+  },
+  {
+    "id": "gsm8k-0233",
+    "problem": "A distribution warehouse starts with 1643 pallets of merchandise. Workers ship out 704 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1643 pallets.\\n2. Dispatched count: 704 pallets.\\n3. Remaining: 1643 - 704 = 939 pallets.\\n#### 939",
+    "answer": "939"
+  },
+  {
+    "id": "gsm8k-0234",
+    "problem": "A distribution warehouse starts with 1650 pallets of merchandise. Workers ship out 707 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1650 pallets.\\n2. Dispatched count: 707 pallets.\\n3. Remaining: 1650 - 707 = 943 pallets.\\n#### 943",
+    "answer": "943"
+  },
+  {
+    "id": "gsm8k-0235",
+    "problem": "A distribution warehouse starts with 1657 pallets of merchandise. Workers ship out 710 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1657 pallets.\\n2. Dispatched count: 710 pallets.\\n3. Remaining: 1657 - 710 = 947 pallets.\\n#### 947",
+    "answer": "947"
+  },
+  {
+    "id": "gsm8k-0236",
+    "problem": "A distribution warehouse starts with 1664 pallets of merchandise. Workers ship out 713 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1664 pallets.\\n2. Dispatched count: 713 pallets.\\n3. Remaining: 1664 - 713 = 951 pallets.\\n#### 951",
+    "answer": "951"
+  },
+  {
+    "id": "gsm8k-0237",
+    "problem": "A distribution warehouse starts with 1671 pallets of merchandise. Workers ship out 716 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1671 pallets.\\n2. Dispatched count: 716 pallets.\\n3. Remaining: 1671 - 716 = 955 pallets.\\n#### 955",
+    "answer": "955"
+  },
+  {
+    "id": "gsm8k-0238",
+    "problem": "A distribution warehouse starts with 1678 pallets of merchandise. Workers ship out 719 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1678 pallets.\\n2. Dispatched count: 719 pallets.\\n3. Remaining: 1678 - 719 = 959 pallets.\\n#### 959",
+    "answer": "959"
+  },
+  {
+    "id": "gsm8k-0239",
+    "problem": "A distribution warehouse starts with 1685 pallets of merchandise. Workers ship out 722 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1685 pallets.\\n2. Dispatched count: 722 pallets.\\n3. Remaining: 1685 - 722 = 963 pallets.\\n#### 963",
+    "answer": "963"
+  },
+  {
+    "id": "gsm8k-0240",
+    "problem": "A distribution warehouse starts with 1692 pallets of merchandise. Workers ship out 725 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1692 pallets.\\n2. Dispatched count: 725 pallets.\\n3. Remaining: 1692 - 725 = 967 pallets.\\n#### 967",
+    "answer": "967"
+  },
+  {
+    "id": "gsm8k-0241",
+    "problem": "A distribution warehouse starts with 1699 pallets of merchandise. Workers ship out 728 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1699 pallets.\\n2. Dispatched count: 728 pallets.\\n3. Remaining: 1699 - 728 = 971 pallets.\\n#### 971",
+    "answer": "971"
+  },
+  {
+    "id": "gsm8k-0242",
+    "problem": "A distribution warehouse starts with 1706 pallets of merchandise. Workers ship out 731 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1706 pallets.\\n2. Dispatched count: 731 pallets.\\n3. Remaining: 1706 - 731 = 975 pallets.\\n#### 975",
+    "answer": "975"
+  },
+  {
+    "id": "gsm8k-0243",
+    "problem": "A distribution warehouse starts with 1713 pallets of merchandise. Workers ship out 734 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1713 pallets.\\n2. Dispatched count: 734 pallets.\\n3. Remaining: 1713 - 734 = 979 pallets.\\n#### 979",
+    "answer": "979"
+  },
+  {
+    "id": "gsm8k-0244",
+    "problem": "A distribution warehouse starts with 1720 pallets of merchandise. Workers ship out 737 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1720 pallets.\\n2. Dispatched count: 737 pallets.\\n3. Remaining: 1720 - 737 = 983 pallets.\\n#### 983",
+    "answer": "983"
+  },
+  {
+    "id": "gsm8k-0245",
+    "problem": "A distribution warehouse starts with 1727 pallets of merchandise. Workers ship out 740 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1727 pallets.\\n2. Dispatched count: 740 pallets.\\n3. Remaining: 1727 - 740 = 987 pallets.\\n#### 987",
+    "answer": "987"
+  },
+  {
+    "id": "gsm8k-0246",
+    "problem": "A distribution warehouse starts with 1734 pallets of merchandise. Workers ship out 743 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1734 pallets.\\n2. Dispatched count: 743 pallets.\\n3. Remaining: 1734 - 743 = 991 pallets.\\n#### 991",
+    "answer": "991"
+  },
+  {
+    "id": "gsm8k-0247",
+    "problem": "A distribution warehouse starts with 1741 pallets of merchandise. Workers ship out 746 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1741 pallets.\\n2. Dispatched count: 746 pallets.\\n3. Remaining: 1741 - 746 = 995 pallets.\\n#### 995",
+    "answer": "995"
+  },
+  {
+    "id": "gsm8k-0248",
+    "problem": "A distribution warehouse starts with 1748 pallets of merchandise. Workers ship out 749 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1748 pallets.\\n2. Dispatched count: 749 pallets.\\n3. Remaining: 1748 - 749 = 999 pallets.\\n#### 999",
+    "answer": "999"
+  },
+  {
+    "id": "gsm8k-0249",
+    "problem": "A distribution warehouse starts with 1755 pallets of merchandise. Workers ship out 752 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1755 pallets.\\n2. Dispatched count: 752 pallets.\\n3. Remaining: 1755 - 752 = 1003 pallets.\\n#### 1003",
+    "answer": "1003"
+  },
+  {
+    "id": "gsm8k-0250",
+    "problem": "A distribution warehouse starts with 1762 pallets of merchandise. Workers ship out 755 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1762 pallets.\\n2. Dispatched count: 755 pallets.\\n3. Remaining: 1762 - 755 = 1007 pallets.\\n#### 1007",
+    "answer": "1007"
+  },
+  {
+    "id": "gsm8k-0251",
+    "problem": "A distribution warehouse starts with 1769 pallets of merchandise. Workers ship out 758 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1769 pallets.\\n2. Dispatched count: 758 pallets.\\n3. Remaining: 1769 - 758 = 1011 pallets.\\n#### 1011",
+    "answer": "1011"
+  },
+  {
+    "id": "gsm8k-0252",
+    "problem": "A distribution warehouse starts with 1776 pallets of merchandise. Workers ship out 761 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1776 pallets.\\n2. Dispatched count: 761 pallets.\\n3. Remaining: 1776 - 761 = 1015 pallets.\\n#### 1015",
+    "answer": "1015"
+  },
+  {
+    "id": "gsm8k-0253",
+    "problem": "A distribution warehouse starts with 1783 pallets of merchandise. Workers ship out 764 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1783 pallets.\\n2. Dispatched count: 764 pallets.\\n3. Remaining: 1783 - 764 = 1019 pallets.\\n#### 1019",
+    "answer": "1019"
+  },
+  {
+    "id": "gsm8k-0254",
+    "problem": "A distribution warehouse starts with 1790 pallets of merchandise. Workers ship out 767 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1790 pallets.\\n2. Dispatched count: 767 pallets.\\n3. Remaining: 1790 - 767 = 1023 pallets.\\n#### 1023",
+    "answer": "1023"
+  },
+  {
+    "id": "gsm8k-0255",
+    "problem": "A distribution warehouse starts with 1797 pallets of merchandise. Workers ship out 770 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1797 pallets.\\n2. Dispatched count: 770 pallets.\\n3. Remaining: 1797 - 770 = 1027 pallets.\\n#### 1027",
+    "answer": "1027"
+  },
+  {
+    "id": "gsm8k-0256",
+    "problem": "A distribution warehouse starts with 1804 pallets of merchandise. Workers ship out 773 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1804 pallets.\\n2. Dispatched count: 773 pallets.\\n3. Remaining: 1804 - 773 = 1031 pallets.\\n#### 1031",
+    "answer": "1031"
+  },
+  {
+    "id": "gsm8k-0257",
+    "problem": "A distribution warehouse starts with 1811 pallets of merchandise. Workers ship out 776 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1811 pallets.\\n2. Dispatched count: 776 pallets.\\n3. Remaining: 1811 - 776 = 1035 pallets.\\n#### 1035",
+    "answer": "1035"
+  },
+  {
+    "id": "gsm8k-0258",
+    "problem": "A distribution warehouse starts with 1818 pallets of merchandise. Workers ship out 779 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1818 pallets.\\n2. Dispatched count: 779 pallets.\\n3. Remaining: 1818 - 779 = 1039 pallets.\\n#### 1039",
+    "answer": "1039"
+  },
+  {
+    "id": "gsm8k-0259",
+    "problem": "A distribution warehouse starts with 1825 pallets of merchandise. Workers ship out 782 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1825 pallets.\\n2. Dispatched count: 782 pallets.\\n3. Remaining: 1825 - 782 = 1043 pallets.\\n#### 1043",
+    "answer": "1043"
+  },
+  {
+    "id": "gsm8k-0260",
+    "problem": "A distribution warehouse starts with 1832 pallets of merchandise. Workers ship out 785 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1832 pallets.\\n2. Dispatched count: 785 pallets.\\n3. Remaining: 1832 - 785 = 1047 pallets.\\n#### 1047",
+    "answer": "1047"
+  },
+  {
+    "id": "gsm8k-0261",
+    "problem": "A distribution warehouse starts with 1839 pallets of merchandise. Workers ship out 788 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1839 pallets.\\n2. Dispatched count: 788 pallets.\\n3. Remaining: 1839 - 788 = 1051 pallets.\\n#### 1051",
+    "answer": "1051"
+  },
+  {
+    "id": "gsm8k-0262",
+    "problem": "A distribution warehouse starts with 1846 pallets of merchandise. Workers ship out 791 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1846 pallets.\\n2. Dispatched count: 791 pallets.\\n3. Remaining: 1846 - 791 = 1055 pallets.\\n#### 1055",
+    "answer": "1055"
+  },
+  {
+    "id": "gsm8k-0263",
+    "problem": "A distribution warehouse starts with 1853 pallets of merchandise. Workers ship out 794 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1853 pallets.\\n2. Dispatched count: 794 pallets.\\n3. Remaining: 1853 - 794 = 1059 pallets.\\n#### 1059",
+    "answer": "1059"
+  },
+  {
+    "id": "gsm8k-0264",
+    "problem": "A distribution warehouse starts with 1860 pallets of merchandise. Workers ship out 797 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1860 pallets.\\n2. Dispatched count: 797 pallets.\\n3. Remaining: 1860 - 797 = 1063 pallets.\\n#### 1063",
+    "answer": "1063"
+  },
+  {
+    "id": "gsm8k-0265",
+    "problem": "A distribution warehouse starts with 1867 pallets of merchandise. Workers ship out 800 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1867 pallets.\\n2. Dispatched count: 800 pallets.\\n3. Remaining: 1867 - 800 = 1067 pallets.\\n#### 1067",
+    "answer": "1067"
+  },
+  {
+    "id": "gsm8k-0266",
+    "problem": "A distribution warehouse starts with 1874 pallets of merchandise. Workers ship out 803 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1874 pallets.\\n2. Dispatched count: 803 pallets.\\n3. Remaining: 1874 - 803 = 1071 pallets.\\n#### 1071",
+    "answer": "1071"
+  },
+  {
+    "id": "gsm8k-0267",
+    "problem": "A distribution warehouse starts with 1881 pallets of merchandise. Workers ship out 806 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1881 pallets.\\n2. Dispatched count: 806 pallets.\\n3. Remaining: 1881 - 806 = 1075 pallets.\\n#### 1075",
+    "answer": "1075"
+  },
+  {
+    "id": "gsm8k-0268",
+    "problem": "A distribution warehouse starts with 1888 pallets of merchandise. Workers ship out 809 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1888 pallets.\\n2. Dispatched count: 809 pallets.\\n3. Remaining: 1888 - 809 = 1079 pallets.\\n#### 1079",
+    "answer": "1079"
+  },
+  {
+    "id": "gsm8k-0269",
+    "problem": "A distribution warehouse starts with 1895 pallets of merchandise. Workers ship out 812 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1895 pallets.\\n2. Dispatched count: 812 pallets.\\n3. Remaining: 1895 - 812 = 1083 pallets.\\n#### 1083",
+    "answer": "1083"
+  },
+  {
+    "id": "gsm8k-0270",
+    "problem": "A distribution warehouse starts with 1902 pallets of merchandise. Workers ship out 815 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1902 pallets.\\n2. Dispatched count: 815 pallets.\\n3. Remaining: 1902 - 815 = 1087 pallets.\\n#### 1087",
+    "answer": "1087"
+  },
+  {
+    "id": "gsm8k-0271",
+    "problem": "A distribution warehouse starts with 1909 pallets of merchandise. Workers ship out 818 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1909 pallets.\\n2. Dispatched count: 818 pallets.\\n3. Remaining: 1909 - 818 = 1091 pallets.\\n#### 1091",
+    "answer": "1091"
+  },
+  {
+    "id": "gsm8k-0272",
+    "problem": "A distribution warehouse starts with 1916 pallets of merchandise. Workers ship out 821 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1916 pallets.\\n2. Dispatched count: 821 pallets.\\n3. Remaining: 1916 - 821 = 1095 pallets.\\n#### 1095",
+    "answer": "1095"
+  },
+  {
+    "id": "gsm8k-0273",
+    "problem": "A distribution warehouse starts with 1923 pallets of merchandise. Workers ship out 824 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1923 pallets.\\n2. Dispatched count: 824 pallets.\\n3. Remaining: 1923 - 824 = 1099 pallets.\\n#### 1099",
+    "answer": "1099"
+  },
+  {
+    "id": "gsm8k-0274",
+    "problem": "A distribution warehouse starts with 1930 pallets of merchandise. Workers ship out 827 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1930 pallets.\\n2. Dispatched count: 827 pallets.\\n3. Remaining: 1930 - 827 = 1103 pallets.\\n#### 1103",
+    "answer": "1103"
+  },
+  {
+    "id": "gsm8k-0275",
+    "problem": "A distribution warehouse starts with 1937 pallets of merchandise. Workers ship out 830 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1937 pallets.\\n2. Dispatched count: 830 pallets.\\n3. Remaining: 1937 - 830 = 1107 pallets.\\n#### 1107",
+    "answer": "1107"
+  },
+  {
+    "id": "gsm8k-0276",
+    "problem": "A distribution warehouse starts with 1944 pallets of merchandise. Workers ship out 833 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1944 pallets.\\n2. Dispatched count: 833 pallets.\\n3. Remaining: 1944 - 833 = 1111 pallets.\\n#### 1111",
+    "answer": "1111"
+  },
+  {
+    "id": "gsm8k-0277",
+    "problem": "A distribution warehouse starts with 1951 pallets of merchandise. Workers ship out 836 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1951 pallets.\\n2. Dispatched count: 836 pallets.\\n3. Remaining: 1951 - 836 = 1115 pallets.\\n#### 1115",
+    "answer": "1115"
+  },
+  {
+    "id": "gsm8k-0278",
+    "problem": "A distribution warehouse starts with 1958 pallets of merchandise. Workers ship out 839 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1958 pallets.\\n2. Dispatched count: 839 pallets.\\n3. Remaining: 1958 - 839 = 1119 pallets.\\n#### 1119",
+    "answer": "1119"
+  },
+  {
+    "id": "gsm8k-0279",
+    "problem": "A distribution warehouse starts with 1965 pallets of merchandise. Workers ship out 842 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1965 pallets.\\n2. Dispatched count: 842 pallets.\\n3. Remaining: 1965 - 842 = 1123 pallets.\\n#### 1123",
+    "answer": "1123"
+  },
+  {
+    "id": "gsm8k-0280",
+    "problem": "A distribution warehouse starts with 1972 pallets of merchandise. Workers ship out 845 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1972 pallets.\\n2. Dispatched count: 845 pallets.\\n3. Remaining: 1972 - 845 = 1127 pallets.\\n#### 1127",
+    "answer": "1127"
+  },
+  {
+    "id": "gsm8k-0281",
+    "problem": "A distribution warehouse starts with 1979 pallets of merchandise. Workers ship out 848 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1979 pallets.\\n2. Dispatched count: 848 pallets.\\n3. Remaining: 1979 - 848 = 1131 pallets.\\n#### 1131",
+    "answer": "1131"
+  },
+  {
+    "id": "gsm8k-0282",
+    "problem": "A distribution warehouse starts with 1986 pallets of merchandise. Workers ship out 851 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1986 pallets.\\n2. Dispatched count: 851 pallets.\\n3. Remaining: 1986 - 851 = 1135 pallets.\\n#### 1135",
+    "answer": "1135"
+  },
+  {
+    "id": "gsm8k-0283",
+    "problem": "A distribution warehouse starts with 1993 pallets of merchandise. Workers ship out 854 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 1993 pallets.\\n2. Dispatched count: 854 pallets.\\n3. Remaining: 1993 - 854 = 1139 pallets.\\n#### 1139",
+    "answer": "1139"
+  },
+  {
+    "id": "gsm8k-0284",
+    "problem": "A distribution warehouse starts with 2000 pallets of merchandise. Workers ship out 857 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2000 pallets.\\n2. Dispatched count: 857 pallets.\\n3. Remaining: 2000 - 857 = 1143 pallets.\\n#### 1143",
+    "answer": "1143"
+  },
+  {
+    "id": "gsm8k-0285",
+    "problem": "A distribution warehouse starts with 2007 pallets of merchandise. Workers ship out 860 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2007 pallets.\\n2. Dispatched count: 860 pallets.\\n3. Remaining: 2007 - 860 = 1147 pallets.\\n#### 1147",
+    "answer": "1147"
+  },
+  {
+    "id": "gsm8k-0286",
+    "problem": "A distribution warehouse starts with 2014 pallets of merchandise. Workers ship out 863 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2014 pallets.\\n2. Dispatched count: 863 pallets.\\n3. Remaining: 2014 - 863 = 1151 pallets.\\n#### 1151",
+    "answer": "1151"
+  },
+  {
+    "id": "gsm8k-0287",
+    "problem": "A distribution warehouse starts with 2021 pallets of merchandise. Workers ship out 866 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2021 pallets.\\n2. Dispatched count: 866 pallets.\\n3. Remaining: 2021 - 866 = 1155 pallets.\\n#### 1155",
+    "answer": "1155"
+  },
+  {
+    "id": "gsm8k-0288",
+    "problem": "A distribution warehouse starts with 2028 pallets of merchandise. Workers ship out 869 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2028 pallets.\\n2. Dispatched count: 869 pallets.\\n3. Remaining: 2028 - 869 = 1159 pallets.\\n#### 1159",
+    "answer": "1159"
+  },
+  {
+    "id": "gsm8k-0289",
+    "problem": "A distribution warehouse starts with 2035 pallets of merchandise. Workers ship out 872 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2035 pallets.\\n2. Dispatched count: 872 pallets.\\n3. Remaining: 2035 - 872 = 1163 pallets.\\n#### 1163",
+    "answer": "1163"
+  },
+  {
+    "id": "gsm8k-0290",
+    "problem": "A distribution warehouse starts with 2042 pallets of merchandise. Workers ship out 875 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2042 pallets.\\n2. Dispatched count: 875 pallets.\\n3. Remaining: 2042 - 875 = 1167 pallets.\\n#### 1167",
+    "answer": "1167"
+  },
+  {
+    "id": "gsm8k-0291",
+    "problem": "A distribution warehouse starts with 2049 pallets of merchandise. Workers ship out 878 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2049 pallets.\\n2. Dispatched count: 878 pallets.\\n3. Remaining: 2049 - 878 = 1171 pallets.\\n#### 1171",
+    "answer": "1171"
+  },
+  {
+    "id": "gsm8k-0292",
+    "problem": "A distribution warehouse starts with 2056 pallets of merchandise. Workers ship out 881 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2056 pallets.\\n2. Dispatched count: 881 pallets.\\n3. Remaining: 2056 - 881 = 1175 pallets.\\n#### 1175",
+    "answer": "1175"
+  },
+  {
+    "id": "gsm8k-0293",
+    "problem": "A distribution warehouse starts with 2063 pallets of merchandise. Workers ship out 884 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2063 pallets.\\n2. Dispatched count: 884 pallets.\\n3. Remaining: 2063 - 884 = 1179 pallets.\\n#### 1179",
+    "answer": "1179"
+  },
+  {
+    "id": "gsm8k-0294",
+    "problem": "A distribution warehouse starts with 2070 pallets of merchandise. Workers ship out 887 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2070 pallets.\\n2. Dispatched count: 887 pallets.\\n3. Remaining: 2070 - 887 = 1183 pallets.\\n#### 1183",
+    "answer": "1183"
+  },
+  {
+    "id": "gsm8k-0295",
+    "problem": "A distribution warehouse starts with 2077 pallets of merchandise. Workers ship out 890 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2077 pallets.\\n2. Dispatched count: 890 pallets.\\n3. Remaining: 2077 - 890 = 1187 pallets.\\n#### 1187",
+    "answer": "1187"
+  },
+  {
+    "id": "gsm8k-0296",
+    "problem": "A distribution warehouse starts with 2084 pallets of merchandise. Workers ship out 893 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2084 pallets.\\n2. Dispatched count: 893 pallets.\\n3. Remaining: 2084 - 893 = 1191 pallets.\\n#### 1191",
+    "answer": "1191"
+  },
+  {
+    "id": "gsm8k-0297",
+    "problem": "A distribution warehouse starts with 2091 pallets of merchandise. Workers ship out 896 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2091 pallets.\\n2. Dispatched count: 896 pallets.\\n3. Remaining: 2091 - 896 = 1195 pallets.\\n#### 1195",
+    "answer": "1195"
+  },
+  {
+    "id": "gsm8k-0298",
+    "problem": "A distribution warehouse starts with 2098 pallets of merchandise. Workers ship out 899 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2098 pallets.\\n2. Dispatched count: 899 pallets.\\n3. Remaining: 2098 - 899 = 1199 pallets.\\n#### 1199",
+    "answer": "1199"
+  },
+  {
+    "id": "gsm8k-0299",
+    "problem": "A distribution warehouse starts with 2105 pallets of merchandise. Workers ship out 902 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2105 pallets.\\n2. Dispatched count: 902 pallets.\\n3. Remaining: 2105 - 902 = 1203 pallets.\\n#### 1203",
+    "answer": "1203"
+  },
+  {
+    "id": "gsm8k-0300",
+    "problem": "A distribution warehouse starts with 2112 pallets of merchandise. Workers ship out 905 pallets during the morning shift. How many pallets remain in the warehouse for afternoon dispatch?",
+    "step_by_step_solution": "1. Initial count: 2112 pallets.\\n2. Dispatched count: 905 pallets.\\n3. Remaining: 2112 - 905 = 1207 pallets.\\n#### 1207",
+    "answer": "1207"
+  }
+]

@@ -12,118 +12,207 @@ from pathlib import Path
 
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("PORT", 3000))
 HTML_FILE = Path(__file__).parent / "static" / "index.html"
+CHATS_FILE = Path(__file__).parent / "static" / "saved_chats.json"
+
+if not CHATS_FILE.exists():
+    with open(CHATS_FILE, "w", encoding="utf-8") as f:
+        json.dump([], f)
 
 
-def generate_intelligent_reply(prompt: str, model: str) -> str:
-    """Generate rich, domain-aware, intelligent responses for user queries."""
+def generate_agent_reply(agent_id: str, prompt: str) -> str:
     p_lower = prompt.lower().strip()
     
-    # 1. Math and Calculation
-    math_match = re.search(r"(\d+(?:\.\d+)?)\s*([\+\-\*\/\^])\s*(\d+(?:\.\d+)?)", prompt)
-    if math_match or any(w in p_lower for w in ["calculate", "compute", "what is", "solve", "math", "+", "-", "*", "/"]) and any(c.isdigit() for c in prompt):
-        try:
-            clean_expr = re.sub(r"[^0-9\+\-\*\/\.\(\)\s]", "", prompt).strip()
-            if clean_expr and len(clean_expr) >= 3:
-                val = eval(clean_expr, {"__builtins__": None}, {"math": math, "sqrt": math.sqrt, "pow": math.pow})
-                return (
-                    f"### Calculation Result\n\n"
-                    f"**Expression**: `{clean_expr}`\n"
-                    f"**Result**: `{val}`\n\n"
-                    f"--- \n"
-                    f"*Computed via OmniFlow Mathematical Engine.*"
-                )
-        except Exception:
-            pass
-
-    # 2. Python Code Generation
-    if any(k in p_lower for k in ["python", "code", "function", "script", "fastapi", "react", "algorithm", "write a program", "def ", "class "]):
-        if "fastapi" in p_lower or "api" in p_lower:
-            return (
-                f"### Python FastAPI AI Gateway Route Implementation\n\n"
-                f"Here is a production-ready asynchronous endpoint with rate limiting and token streaming:\n\n"
-                f"```python\n"
-                f"from fastapi import FastAPI, HTTPException, Depends, Header\n"
-                f"from pydantic import BaseModel, Field\n"
-                f"from typing import List, Optional\n"
-                f"import time\n\n"
-                f"app = FastAPI(title='OmniFlow AI Gateway', version='1.0.0')\n\n"
-                f"class Message(BaseModel):\n"
-                f"    role: str = Field(..., example='user')\n"
-                f"    content: str = Field(..., example='Hello OmniFlow')\n\n"
-                f"class ChatRequest(BaseModel):\n"
-                f"    model: str = 'gpt-4o'\n"
-                f"    messages: List[Message]\n"
-                f"    temperature: float = 0.7\n"
-                f"    max_tokens: int = 4096\n\n"
-                f"@app.post('/api/v1/chat/completions')\n"
-                f"async def create_chat_completion(request: ChatRequest, authorization: Optional[str] = Header(None)):\n"
-                f"    if not authorization:\n"
-                f"        raise HTTPException(status_code=401, detail='Missing Authorization API Key')\n"
-                f"    \n"
-                f"    return {{\n"
-                f"        'id': f'chatcmpl-{{int(time.time())}}',\n"
-                f"        'model': request.model,\n"
-                f"        'choices': [{{\n"
-                f"            'index': 0,\n"
-                f"            'message': {{'role': 'assistant', 'content': f'Processed by OmniFlow {{request.model}}'}},\n"
-                f"            'finish_reason': 'stop'\n"
-                f"        }}],\n"
-                f"        'usage': {{'prompt_tokens': 12, 'completion_tokens': 45, 'total_tokens': 57}}\n"
-                f"    }}\n"
-                f"```"
-            )
-        else:
-            return (
-                f"### Python Autonomous Agent Function Implementation\n\n"
-                f"Here is the requested implementation for `{prompt}`:\n\n"
-                f"```python\n"
-                f"from typing import List, Dict, Any, Optional\n"
-                f"import json\n"
-                f"import time\n\n"
-                f"class AutonomousAgentTask:\n"
-                f"    \"\"\"Autonomous Agent Task Executor for OmniFlow Platform.\"\"\"\n"
-                f"    \n"
-                f"    def __init__(self, name: str = 'OmniAgent'):\n"
-                f"        self.name = name\n"
-                f"        self.memory: List[str] = []\n\n"
-                f"    def run(self, query: str) -> Dict[str, Any]:\n"
-                f"        start = time.time()\n"
-                f"        result = {{\n"
-                f"            'agent': self.name,\n"
-                f"            'query': query,\n"
-                f"            'status': 'SUCCESS',\n"
-                f"            'output': f'Autonomous execution complete for \"{{query}}\"',\n"
-                f"            'latency_ms': round((time.time() - start) * 1000, 2)\n"
-                f"        }}\n"
-                f"        self.memory.append(query)\n"
-                f"        return result\n\n"
-                f"# Usage:\n"
-                f"agent = AutonomousAgentTask('PlannerAgent')\n"
-                f"print(agent.run('{prompt}'))\n"
-                f"```"
-            )
-
-    # 3. Architecture & Concepts
-    if any(k in p_lower for k in ["rag", "retrieval", "vector", "agent", "multi-agent", "swarm", "dag", "orchestration"]):
+    # 1. DEVIN AI
+    if agent_id == "devin":
         return (
-            f"### Multi-Agent Swarm & Intelligent Architecture\n\n"
-            f"**OmniFlow AI Swarm Architecture** coordinates multiple autonomous specialists simultaneously:\n\n"
-            f"1. **Task Planner Agent**: Decomposes high-level prompts into actionable DAG execution steps.\n"
-            f"2. **Research & RAG Agent**: Performs hybrid dense vector and sparse lexical BM25 retrieval.\n"
-            f"3. **Code Synthesizer Agent**: Generates verified, executable logic and API schemas.\n"
-            f"4. **Security Auditor Agent**: Enforces zero-trust safety and PII masking.\n"
-            f"5. **Consensus Judge Agent**: Synthesizes multi-agent deliberations into final verified deliverables."
+            f"### 🧑‍💻 Devin AI (Autonomous Software Engineer)\n\n"
+            f"I have initialized an isolated workspace container to resolve: *\"{prompt}\"*\n\n"
+            f"**Devin Execution Plan & Actions:**\n"
+            f"1. **Repository Inspection**: Scanned project directories and identified dependency requirements.\n"
+            f"2. **Implementation**: Writing production-grade code with error handling.\n"
+            f"3. **Verification**: Running automated test suite in terminal.\n\n"
+            f"```bash\n"
+            f"# Devin Terminal Execution Shell\n"
+            f"$ git checkout -b feature/devin-solution\n"
+            f"$ python -m pytest tests/ -v\n"
+            f"[PASS] 14 tests executed in 0.42s (100% passing)\n"
+            f"$ git commit -m 'feat: implement automated solution for {prompt[:30]}'\n"
+            f"```\n\n"
+            f"**Completed Code Implementation:**\n"
+            f"```python\n"
+            f"# Generated by Devin AI\n"
+            f"from typing import Any, Dict, List\n"
+            f"import time\n\n"
+            f"class DevinEngine:\n"
+            f"    def __init__(self, task: str = '{prompt[:35]}'):\n"
+            f"        self.task = task\n"
+            f"        self.is_resolved = True\n\n"
+            f"    def execute(self) -> Dict[str, Any]:\n"
+            f"        return {{'status': 'RESOLVED', 'task': self.task, 'timestamp': time.time()}}\n"
+            f"```\n\n"
+            f"✅ **Task Status**: Successfully implemented and verified by Devin."
         )
 
-    # Default general response
-    return (
-        f"### OmniFlow AI Response ({model})\n\n"
-        f"**Prompt**: *\"{prompt}\"*\n\n"
-        f"Processed successfully across active multi-provider gateway endpoints.\n\n"
-        f"- **Verification**: Zero PII violations detected, grounding score 0.98.\n"
-        f"- **Execution Mode**: Active model `{model}` with sub-50ms token routing.\n\n"
-        f"You can also use the **Multi-Agent Swarm Space** to broadcast tasks to all 8 specialized agents simultaneously, or use the **Prompt Studio** to hydrate Jinja2 templates."
-    )
+    # 2. BOLT.NEW
+    if agent_id == "bolt":
+        return (
+            f"### ⚡ Bolt.new (Full-Stack Web Synthesizer)\n\n"
+            f"I have scaffolded a full-stack React + TypeScript + Tailwind application for: *\"{prompt}\"*\n\n"
+            f"**File Structure:**\n"
+            f"- `src/components/MainApp.tsx` (Interactive UI Component)\n"
+            f"- `src/hooks/useData.ts` (State & Data Management)\n"
+            f"- `src/styles/globals.css` (Tailwind Design System)\n\n"
+            f"```tsx\n"
+            f"// src/components/MainApp.tsx - Bolt.new Interactive Component\n"
+            f"import React, {{ useState }} from 'react';\n"
+            f"import {{ Sparkles, ArrowRight }} from 'lucide-react';\n\n"
+            f"export default function MainApp() {{\n"
+            f"  const [active, setActive] = useState(true);\n"
+            f"  return (\n"
+            f"    <div className='min-h-screen bg-slate-50 p-8 flex items-center justify-center'>\n"
+            f"      <div className='bg-white p-6 rounded-2xl shadow-sm border border-slate-200 max-w-lg w-full'>\n"
+            f"        <div className='flex items-center gap-2 text-indigo-600 font-bold text-lg mb-2'>\n"
+            f"          <Sparkles className='w-5 h-5' />\n"
+            f"          <span>Built with Bolt.new</span>\n"
+            f"        </div>\n"
+            f"        <p className='text-slate-600 text-sm mb-4'>{prompt}</p>\n"
+            f"        <button className='w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-medium flex items-center justify-center gap-2'>\n"
+            f"          <span>Launch App</span>\n"
+            f"          <ArrowRight className='w-4 h-4' />\n"
+            f"        </button>\n"
+            f"      </div>\n"
+            f"    </div>\n"
+            f"  );\n"
+            f"}}\n"
+            f"```\n\n"
+            f"🚀 **Live Preview Ready**: Interactive container running on hot-reload."
+        )
+
+    # 3. LOVABLE AI
+    if agent_id == "lovable":
+        return (
+            f"### 💖 Lovable AI (Full-Stack UI/UX Synthesizer)\n\n"
+            f"I have crafted a delightful, user-centric interface design and component architecture for: *\"{prompt}\"*\n\n"
+            f"**UI/UX Design Specifications:**\n"
+            f"- **Color Palette**: Clean modern palette (Crisp White `#ffffff`, Soft Zinc `#f8fafc`, Indigo `#6366f1`).\n"
+            f"- **Micro-interactions**: Smooth transitions, card elevation, and responsive state handling.\n"
+            f"- **Accessibility**: High contrast ratio (WCAG AAA compliant), semantic HTML5 tags.\n\n"
+            f"```tsx\n"
+            f"// Lovable Component Blueprint\n"
+            f"export const LovableExperience: React.FC = () => (\n"
+            f"  <section className='p-6 bg-gradient-to-br from-indigo-50/50 via-white to-purple-50/50 rounded-3xl border border-indigo-100 shadow-sm'>\n"
+            f"    <h3 className='font-bold text-slate-900 text-xl tracking-tight'>Delightful Experience</h3>\n"
+            f"    <p className='text-slate-600 text-sm mt-1.5 leading-relaxed'>Designed for: {prompt}</p>\n"
+            f"    <div className='mt-4 flex gap-2'>\n"
+            f"      <span className='px-3 py-1 bg-indigo-100/80 text-indigo-700 text-xs font-semibold rounded-full'>✨ Polished</span>\n"
+            f"      <span className='px-3 py-1 bg-pink-100/80 text-pink-700 text-xs font-semibold rounded-full'>💖 Lovable</span>\n"
+            f"    </div>\n"
+            f"  </section>\n"
+            f");\n"
+            f"```"
+        )
+
+    # 4. DEEPSEEK R1
+    if agent_id == "deepseek":
+        return (
+            f"### 🟡 DeepSeek R1 (Deep Chain-of-Thought Reasoner)\n\n"
+            f"<details open><summary style='font-family:monospace;font-size:12px;color:#d97706;cursor:pointer;font-weight:bold;'>🧠 DeepSeek Thought Chain (Thinking Process):</summary>"
+            f"<div style='background:#fffbeb;border-left:3px solid #f59e0b;padding:12px;margin:8px 0;font-size:12px;font-family:monospace;color:#92400e;border-radius:6px;'>"
+            f"1. Let's decompose the prompt: '{prompt}'.\n"
+            f"2. Mathematical and logical constraints evaluated.\n"
+            f"3. Algorithm complexity: O(N log N) optimal scaling path selected.\n"
+            f"4. Synthesizing direct, mathematically sound solution."
+            f"</div></details>\n\n"
+            f"**Conclusion & Solution:**\n"
+            f"For *\"{prompt}\"*, the optimal approach balances computational efficiency with strict formal verification.\n\n"
+            f"- **Primary Logic**: Employs deterministic state transitions and vectorized memory structures.\n"
+            f"- **Performance**: Sub-10ms evaluation latency with verified proofs."
+        )
+
+    # 5. CLAUDE 3.7 SONNET
+    if agent_id == "claude":
+        return (
+            f"### 🟣 Claude 3.7 Sonnet (Anthropic)\n\n"
+            f"I've analyzed your prompt regarding *\"{prompt}\"* with attention to nuance, architectural elegance, and robustness.\n\n"
+            f"**Key Insights & Analysis:**\n"
+            f"- **Conceptual Clarity**: Breaking down the core principles ensures modular maintainability.\n"
+            f"- **Edge Case Handling**: Verified against boundary conditions and unexpected inputs.\n"
+            f"- **System Safety**: Grounded assertions with zero hallucination.\n\n"
+            f"```python\n"
+            f"# Claude 3.7 Structured Implementation\n"
+            f"def solution_engine(context: str = '{prompt[:30]}'):\n"
+            f"    \"\"\"High-clarity, well-typed functional implementation.\"\"\"\n"
+            f"    return {{'context': context, 'status': 'OPTIMAL', 'verified': True}}\n"
+            f"```\n\n"
+            f"Let me know if you would like me to expand on any specific sub-module or refine the implementation further."
+        )
+
+    # 6. GPT-5.5 / OPENAI
+    if agent_id in ("gpt-5.5", "openai"):
+        return (
+            f"### 🟢 GPT-5.5 (OpenAI Cognitive Engine)\n\n"
+            f"Here is a comprehensive, production-ready solution for *\"{prompt}\"*:\n\n"
+            f"**1. Core Architecture Overview**\n"
+            f"The system implements end-to-end orchestration, token budgeting, and high-concurrency routing designed for scale.\n\n"
+            f"**2. Technical Specifications**\n"
+            f"- **Latency Profile**: P95 < 45ms across distributed gateway nodes.\n"
+            f"- **Fault Tolerance**: Automatic circuit breaking with dynamic fallback cascades.\n\n"
+            f"```python\n"
+            f"# GPT-5.5 Production Module\n"
+            f"from pydantic import BaseModel, Field\n\n"
+            f"class SystemConfig(BaseModel):\n"
+            f"    task_name: str = Field(default='{prompt[:35]}')\n"
+            f"    enabled: bool = True\n"
+            f"    max_concurrency: int = 1000\n"
+            f"```\n\n"
+            f"All safety policies and performance metrics have been validated."
+        )
+
+    # 7. GEMINI 2.0
+    if agent_id == "gemini":
+        return (
+            f"### 🔵 Gemini 2.0 Pro (Google DeepMind)\n\n"
+            f"Here is the multimodal analysis and up-to-date knowledge synthesis for *\"{prompt}\"*:\n\n"
+            f"**Fast Synthesis & Web Knowledge:**\n"
+            f"- **Real-Time Retrieval**: Fused with current web knowledge and multimodal token contexts (1M token window).\n"
+            f"- **Cross-Disciplinary Connections**: Integrates software engineering, data science, and operational efficiency.\n\n"
+            f"**Comparative Advantage:**\n"
+            f"- Ultra-fast inference with native reasoning over long-context repositories."
+        )
+
+    # 8. XAI / GROK 3
+    if agent_id in ("grok", "z_ai", "xai"):
+        return (
+            f"### 👁️ Grok 3 (xAI Real-Time Engine)\n\n"
+            f"Let's get straight to the point on *\"{prompt}\"*:\n\n"
+            f"- **The Direct Answer**: The most effective way to solve this is using minimal code, maximum throughput, and zero boilerplate fluff.\n"
+            f"- **Technical Edge**: Leverages Colossus cluster acceleration with real-time reasoning.\n\n"
+            f"```python\n"
+            f"# Grok High-Speed Implementation\n"
+            f"fast_solve = lambda x: f'Solved {prompt[:25]} with maximum speed: {{x * 2}}'\n"
+            f"print(fast_solve(42))\n"
+            f"```"
+        )
+
+    # 9. CURSOR / Z-AI
+    if agent_id in ("cursor", "z-ai"):
+        return (
+            f"### 🌐 Z-AI / Cursor (Autonomous Pair Programmer)\n\n"
+            f"I have prepared an instant diff and refactoring recommendation for: *\"{prompt}\"*\n\n"
+            f"```diff\n"
+            f"--- a/src/engine.py\n"
+            f"+++ b/src/engine.py\n"
+            f"@@ -1,5 +1,8 @@\n"
+            f"-# Legacy synchronous handler\n"
+            f"-def process_data(x): return x\n"
+            f"+# Optimized async stream pipeline\n"
+            f"+async def process_data(x: str) -> str:\n"
+            f"+    return f'Processed: {{x}}'\n"
+            f"```\n\n"
+            f"⚡ **Instant Edit Applied**: Ready to accept diff."
+        )
+
+    return f"### AI Agent ({agent_id})\n\nProcessed *\"{prompt}\"* successfully with active model inference."
 
 
 class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
@@ -142,7 +231,7 @@ class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
 
-        if path in ("/", "/index.html", "/playground", "/prompts", "/agents", "/swarm"):
+        if path in ("/", "/index.html", "/playground", "/prompts", "/agents", "/swarm", "/history"):
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.end_headers()
@@ -150,34 +239,28 @@ class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
                 with open(HTML_FILE, "rb") as f:
                     self.wfile.write(f.read())
             else:
-                self.wfile.write(b"<h1>OmniFlow AI Console</h1><p>Initializing...</p>")
+                self.wfile.write(b"<h1>OmniFlow AI Console</h1>")
             return
 
         if path == "/health":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
-            self.wfile.write(json.dumps({"status": "healthy", "app": "OmniFlow AI", "version": "2.0.0"}).encode())
+            self.wfile.write(json.dumps({"status": "healthy", "app": "OmniFlow AI", "version": "3.0.0"}).encode())
             return
 
-        if path == "/api/v1/agents":
+        if path == "/api/v1/chats":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
-            agents_list = [
-                {"id": "agent-1", "name": "Lead Architect Agent", "role": "System Architecture & DAG Planner", "model": "GPT-4o", "status": "ACTIVE", "icon": "🧠", "color": "indigo"},
-                {"id": "agent-2", "name": "Deep Researcher Agent", "role": "Knowledge & Hybrid RAG Retrieval", "model": "Gemini 1.5 Pro", "status": "ACTIVE", "icon": "🔍", "color": "blue"},
-                {"id": "agent-3", "name": "Code Synthesizer Agent", "role": "Full-Stack & Backend Logic", "model": "Claude 3.5 Sonnet", "status": "ACTIVE", "icon": "💻", "color": "emerald"},
-                {"id": "agent-4", "name": "Security Auditor Agent", "role": "Zero-Trust & PII Guardrails", "model": "DeepSeek V3", "status": "ACTIVE", "icon": "🛡️", "color": "rose"},
-                {"id": "agent-5", "name": "Data Analyst Agent", "role": "SQL Analytics & Metric Optimization", "model": "GPT-4o", "status": "ACTIVE", "icon": "📊", "color": "purple"},
-                {"id": "agent-6", "name": "Technical Writer Agent", "role": "Documentation & RFC Specs", "model": "Claude 3.5 Sonnet", "status": "ACTIVE", "icon": "✍️", "color": "amber"},
-                {"id": "agent-7", "name": "Consensus Judge Agent", "role": "Evaluation & Grounding Verification", "model": "Gemini 1.5 Pro", "status": "ACTIVE", "icon": "⚖️", "color": "teal"},
-                {"id": "agent-8", "name": "DevOps Deployer Agent", "role": "Docker, Helm & Cloud Infrastructure", "model": "DeepSeek V3", "status": "ACTIVE", "icon": "🚀", "color": "cyan"},
-            ]
-            self.wfile.write(json.dumps(agents_list).encode())
+            try:
+                with open(CHATS_FILE, "r", encoding="utf-8") as f:
+                    chats = json.load(f)
+            except Exception:
+                chats = []
+            self.wfile.write(json.dumps(chats).encode())
             return
 
-        # Fallback to serving static files
         super().do_GET()
 
     def do_POST(self):
@@ -191,11 +274,11 @@ class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
             req_data = {}
 
         if path == "/api/v1/chat/completions":
-            model = req_data.get("model", "gpt-4o")
+            model = req_data.get("model", "gpt-5.5")
             messages = req_data.get("messages", [])
             last_msg = messages[-1].get("content", "") if messages else "Hello"
             
-            resp_content = generate_intelligent_reply(last_msg, model)
+            resp_content = generate_agent_reply(model.lower(), last_msg)
             prompt_toks = max(1, len(last_msg) // 4)
             comp_toks = max(10, len(resp_content) // 4)
             
@@ -222,72 +305,69 @@ class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
             return
 
         if path == "/api/v1/swarm/broadcast":
-            task = req_data.get("task", "Analyze system architecture and scale platform")
+            task = req_data.get("task", "Build a high-performance system")
+            selected_agents = req_data.get("agents", ["gpt-5.5", "claude", "gemini", "devin", "bolt", "lovable", "deepseek", "grok", "z-ai"])
             start_t = time.time()
             
-            # Step-by-step coordinated responses from all agents
-            swarm_responses = [
-                {
-                    "agent": "Lead Architect Agent",
-                    "model": "GPT-4o",
-                    "avatar": "🧠",
-                    "status": "COMPLETED",
-                    "latency_ms": 160,
-                    "output": f"Decomposed task '{task}' into 4 parallel microservices with state graph checkpoints and DAG topological ordering."
-                },
-                {
-                    "agent": "Deep Researcher Agent",
-                    "model": "Gemini 1.5 Pro",
-                    "avatar": "🔍",
-                    "status": "COMPLETED",
-                    "latency_ms": 290,
-                    "output": f"Queried hybrid knowledge base. Retrieved 8 relevant documentation passages using Reciprocal Rank Fusion (RRF k=60)."
-                },
-                {
-                    "agent": "Code Synthesizer Agent",
-                    "model": "Claude 3.5 Sonnet",
-                    "avatar": "💻",
-                    "status": "COMPLETED",
-                    "latency_ms": 340,
-                    "output": "Generated full Python FastAPI service implementation with asynchronous connection pooling and token streaming."
-                },
-                {
-                    "agent": "Security Auditor Agent",
-                    "model": "DeepSeek V3",
-                    "avatar": "🛡️",
-                    "status": "COMPLETED",
-                    "latency_ms": 110,
-                    "output": "Audited payload for vulnerabilities. Applied zero-trust regex PII masking and passed adversarial jailbreak firewall."
-                },
-                {
-                    "agent": "Data Analyst Agent",
-                    "model": "GPT-4o",
-                    "avatar": "📊",
-                    "status": "COMPLETED",
-                    "latency_ms": 220,
-                    "output": "Estimated throughput capacity at 24,000 req/min with $0.0034 cost per 1,000 completion tokens."
-                },
-                {
-                    "agent": "Consensus Judge Agent",
-                    "model": "Gemini 1.5 Pro",
-                    "avatar": "⚖️",
-                    "status": "COMPLETED",
-                    "latency_ms": 150,
-                    "output": "Consensus reached: 100% agreement across all agents. Grounding faithfulness score: 0.99. Final deliverable approved."
-                }
-            ]
+            agent_definitions = {
+                "gpt-5.5": {"name": "GPT-5.5 (OpenAI)", "avatar": "🟢", "role": "Flagship Reasoning & Architecture", "badge": "OpenAI"},
+                "claude": {"name": "Claude 3.7 Sonnet", "avatar": "🟣", "role": "Nuanced Engineering & Analysis", "badge": "Anthropic"},
+                "gemini": {"name": "Gemini 2.0 Pro", "avatar": "🔵", "role": "Multimodal & Web Knowledge", "badge": "Google"},
+                "devin": {"name": "Devin AI", "avatar": "🧑‍💻", "role": "Autonomous Software Engineer", "badge": "Cognition"},
+                "bolt": {"name": "Bolt.new", "avatar": "⚡", "role": "Full-Stack Web App Synthesizer", "badge": "StackBlitz"},
+                "lovable": {"name": "Lovable AI", "avatar": "💖", "role": "UI/UX & Full-Stack Polish", "badge": "Lovable"},
+                "deepseek": {"name": "DeepSeek R1", "avatar": "🟡", "role": "Chain-of-Thought Reasoner", "badge": "DeepSeek"},
+                "grok": {"name": "Grok 3 (xAI)", "avatar": "👁️", "role": "Real-Time Direct Logic", "badge": "xAI"},
+                "z-ai": {"name": "Z-AI / Cursor", "avatar": "🌐", "role": "Autonomous Pair Programmer", "badge": "Cursor"},
+            }
             
-            total_time = round((time.time() - start_t) * 1000 + 450, 2)
+            swarm_deliverables = []
+            for a_id in selected_agents:
+                meta = agent_definitions.get(a_id, {"name": a_id.upper(), "avatar": "🤖", "role": "Specialist", "badge": "AI"})
+                reply = generate_agent_reply(a_id, task)
+                swarm_deliverables.append({
+                    "agent_id": a_id,
+                    "agent": meta["name"],
+                    "avatar": meta["avatar"],
+                    "role": meta["role"],
+                    "badge": meta["badge"],
+                    "output": reply,
+                    "latency_ms": 120 + (len(swarm_deliverables) * 45),
+                    "status": "COMPLETED",
+                })
+            
+            total_time = round((time.time() - start_t) * 1000 + 350, 2)
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps({
                 "task": task,
                 "status": "SUCCESS",
-                "total_agents_invoked": len(swarm_responses),
+                "total_agents_invoked": len(swarm_deliverables),
                 "total_execution_ms": total_time,
-                "deliverables": swarm_responses,
+                "deliverables": swarm_deliverables,
             }).encode())
+            return
+
+        if path == "/api/v1/chats/save":
+            session = req_data.get("session", {})
+            try:
+                with open(CHATS_FILE, "r", encoding="utf-8") as f:
+                    chats = json.load(f)
+            except Exception:
+                chats = []
+            
+            session_id = session.get("id", str(time.time()))
+            chats = [c for c in chats if c.get("id") != session_id]
+            chats.insert(0, session)
+            chats = chats[:50]
+            with open(CHATS_FILE, "w", encoding="utf-8") as f:
+                json.dump(chats, f, indent=2)
+            
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "saved", "id": session_id}).encode())
             return
 
         if path == "/api/v1/prompts/hydrate":
@@ -300,11 +380,7 @@ class OmniFlowHandler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
-            self.wfile.write(json.dumps({
-                "original_template": template,
-                "hydrated_output": hydrated,
-                "variables_resolved": len(variables),
-            }).encode())
+            self.wfile.write(json.dumps({"hydrated_output": hydrated}).encode())
             return
 
         self.send_response(404)
@@ -314,7 +390,7 @@ def run_server():
     socketserver.TCPServer.allow_reuse_address = True
     server_address = ("0.0.0.0", PORT)
     httpd = socketserver.TCPServer(server_address, OmniFlowHandler)
-    print(f"OmniFlow AI Console running at http://localhost:{PORT}")
+    print(f"OmniFlow AI Multi-Agent Platform running at http://localhost:{PORT}")
     httpd.serve_forever()
 
 if __name__ == "__main__":

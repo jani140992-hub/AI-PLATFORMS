@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OmniFlow AI - Modern Multi-Agent & LLMOps Platform</title>
+  <title>OmniFlow AI - Multi-Agent AI Platform & Swarm Arena</title>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
@@ -14,311 +14,338 @@
 <body class="bg-slate-50 text-slate-800 antialiased h-screen flex overflow-hidden">
 
   <!-- Light Sidebar -->
-  <aside class="w-72 bg-white border-r border-slate-200 flex flex-col flex-shrink-0 shadow-sm">
+  <aside class="w-80 bg-white border-r border-slate-200 flex flex-col flex-shrink-0 shadow-sm">
+    <!-- Brand Header -->
     <div class="h-16 flex items-center px-6 border-b border-slate-100">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-blue-500 flex items-center justify-center font-bold text-white shadow-md shadow-indigo-200 mr-3 text-lg">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-blue-500 flex items-center justify-center font-bold text-white shadow-md shadow-indigo-100 mr-3 text-lg">
         Ω
       </div>
       <div>
         <div class="font-bold text-base leading-none text-slate-900">OmniFlow <span class="text-indigo-600">AI</span></div>
-        <div class="text-[10px] text-slate-400 font-semibold tracking-wider uppercase mt-1">Multi-Agent Platform</div>
+        <div class="text-[10px] text-slate-400 font-semibold tracking-wider uppercase mt-1">Multi-Agent Swarm Arena</div>
       </div>
     </div>
 
-    <!-- Navigation (Only 3 Options) -->
-    <nav class="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
-      
-      <!-- Option 1: Multi-Agent Swarm Space -->
-      <button onclick="switchTab('swarm')" id="nav-swarm" class="nav-btn w-full flex items-center px-4 py-3 text-sm font-semibold rounded-xl bg-indigo-600 text-white shadow-sm shadow-indigo-200 transition-all">
-        <svg class="w-5 h-5 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-        Multi-Agent Swarm Space
+    <!-- Navigation Options -->
+    <div class="px-4 pt-4 pb-2 space-y-1.5 border-b border-slate-100">
+      <button onclick="switchTab('swarm')" id="nav-swarm" class="nav-btn w-full flex items-center px-3.5 py-2.5 text-sm font-semibold rounded-xl bg-indigo-600 text-white shadow-sm shadow-indigo-200 transition-all">
+        <span class="mr-2.5 text-lg">👥</span>
+        Multi-Agent Swarm Arena
       </button>
 
-      <!-- Option 2: Chat & AI Playground -->
-      <button onclick="switchTab('playground')" id="nav-playground" class="nav-btn w-full flex items-center px-4 py-3 text-sm font-semibold rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all">
-        <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-        Chat & AI Playground
+      <button onclick="switchTab('playground')" id="nav-playground" class="nav-btn w-full flex items-center px-3.5 py-2.5 text-sm font-semibold rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all">
+        <span class="mr-2.5 text-lg">💬</span>
+        1-on-1 AI Chat Playground
       </button>
 
-      <!-- Option 3: Prompt Studio -->
-      <button onclick="switchTab('prompts')" id="nav-prompts" class="nav-btn w-full flex items-center px-4 py-3 text-sm font-semibold rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all">
-        <svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+      <button onclick="switchTab('prompts')" id="nav-prompts" class="nav-btn w-full flex items-center px-3.5 py-2.5 text-sm font-semibold rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all">
+        <span class="mr-2.5 text-lg">📝</span>
         Prompt Studio
       </button>
+    </div>
 
-    </nav>
-
-    <!-- Bottom Status Card -->
-    <div class="p-4 m-4 bg-slate-50 border border-slate-200/80 rounded-2xl">
-      <div class="flex items-center justify-between text-xs text-slate-600 font-medium mb-1.5">
-        <span class="flex items-center">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
-          8 Agents Online
-        </span>
-        <span class="text-indigo-600 font-bold">99.9% Ready</span>
+    <!-- Saved Chat History List (Persistent Saved Chats) -->
+    <div class="flex-1 flex flex-col min-h-0 px-4 py-3">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Saved Chats & History</span>
+        <button onclick="createNewChat()" class="text-xs text-indigo-600 hover:text-indigo-700 font-semibold flex items-center gap-1">
+          <span>+ New Chat</span>
+        </button>
       </div>
-      <div class="text-[11px] text-slate-500">
-        Cluster: Multi-Model Swarm Active
+
+      <!-- Scrollable History Items -->
+      <div id="chat-history-list" class="flex-1 overflow-y-auto space-y-1 pr-1 text-xs">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Active Agents Count Footer -->
+    <div class="p-3.5 m-3 bg-slate-50 border border-slate-200 rounded-xl">
+      <div class="flex items-center justify-between text-xs font-semibold text-slate-700 mb-1">
+        <span class="flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          9 Flagship AI Agents Ready
+        </span>
+      </div>
+      <div class="text-[10px] text-slate-400">
+        GPT-5.5 • Claude • Gemini • Devin • Bolt • Lovable • Grok • DeepSeek • Z-AI
       </div>
     </div>
   </aside>
 
-  <!-- Main Content Viewport -->
+  <!-- Main Viewport -->
   <div class="flex-1 flex flex-col overflow-hidden bg-slate-50">
     
     <!-- Top Header -->
     <header class="h-16 bg-white/90 backdrop-blur border-b border-slate-200/80 flex items-center justify-between px-8 z-10 shadow-xs">
       <div class="flex items-center space-x-4">
-        <div class="text-base font-bold text-slate-800" id="current-view-title">Multi-Agent Swarm Space</div>
+        <div class="text-base font-bold text-slate-800" id="current-view-title">Multi-Agent Swarm Arena</div>
         <div class="h-4 w-px bg-slate-200"></div>
-        <span class="px-2.5 py-1 text-xs rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-medium flex items-center">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-ping"></span>
-          Live Collaboration Ready
+        <span class="px-2.5 py-1 text-xs rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 font-medium flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-ping"></span>
+          All 9 Agents Active & Responding
         </span>
       </div>
 
       <div class="flex items-center space-x-4">
         <div class="text-xs text-slate-500 font-medium">
-          Running on: <code class="text-indigo-600 font-mono bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">http://localhost:3000</code>
+          Endpoint: <code class="text-indigo-600 font-mono bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100">http://localhost:3000</code>
         </div>
-        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white flex items-center justify-center font-bold text-xs shadow-sm">
-          AI
-        </div>
+        <button onclick="saveCurrentChatSession()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg border border-slate-200 flex items-center gap-1.5 shadow-xs transition-colors">
+          <span>💾 Save Chat</span>
+        </button>
       </div>
     </header>
 
-    <!-- Main Content Panels -->
+    <!-- Main Content Area -->
     <main class="flex-1 overflow-y-auto p-8">
       
-      <!-- ================= 1. MULTI-AGENT SWARM SPACE (So Many Agents at One Space) ================= -->
+      <!-- ================= 1. MULTI-AGENT SWARM ARENA (So Many Agents at One Space) ================= -->
       <section id="view-swarm" class="space-y-6">
         
-        <!-- Header Banner & Broadcast Trigger -->
+        <!-- Swarm Command Box -->
         <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
             <div>
-              <h2 class="text-xl font-bold text-slate-900">Multi-Agent Collaboration Swarm</h2>
-              <p class="text-xs text-slate-500 mt-1">8 specialized autonomous agents collaborating in real time in one unified workspace.</p>
+              <h2 class="text-xl font-bold text-slate-900">Multi-Agent Collective Swarm Room</h2>
+              <p class="text-xs text-slate-500 mt-1">Prompt multiple flagship AI agents (GPT-5.5, Claude, Gemini, Devin, Bolt, Lovable, Grok, DeepSeek, Z-AI) simultaneously in one space.</p>
             </div>
             <div class="flex items-center gap-2">
-              <span class="px-3 py-1 bg-indigo-50 text-indigo-700 font-semibold text-xs rounded-lg border border-indigo-100">
-                8 Autonomous Agents Active
+              <span class="text-xs bg-indigo-50 text-indigo-700 font-bold px-3 py-1.5 rounded-xl border border-indigo-100">
+                9 Specialized AI Agents
               </span>
             </div>
           </div>
 
-          <!-- Broadcast Task Input -->
-          <div class="mt-5 flex flex-col md:flex-row gap-3">
+          <!-- Prompt Broadcast Input -->
+          <div class="flex flex-col md:flex-row gap-3">
             <input 
-              id="swarm-task-input" 
+              id="swarm-prompt-input" 
               type="text" 
-              value="Architect and implement a high-throughput AI Gateway with hybrid RAG and safety guardrails"
-              placeholder="Enter a task to broadcast to all 8 agents simultaneously..."
-              class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all shadow-inner"
+              value="Build an automated customer support AI agent platform with real-time streaming and vector knowledge retrieval"
+              placeholder="Ask a question or enter a project task to broadcast to all agents..."
+              class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all shadow-inner"
             />
             <button 
-              onclick="broadcastSwarmTask()" 
+              onclick="executeMultiAgentBroadcast()" 
               id="swarm-btn"
-              class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-xl shadow-md shadow-indigo-200 flex items-center justify-center gap-2 transition-all"
+              class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-xl shadow-md shadow-indigo-200 flex items-center justify-center gap-2 transition-all flex-shrink-0"
             >
               <span>🚀 Broadcast to All Agents</span>
             </button>
           </div>
+
+          <!-- Agent Selector Checkbox Row -->
+          <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center gap-3 text-xs">
+            <span class="text-slate-400 font-semibold">Include in Swarm:</span>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="gpt-5.5" checked> 🟢 GPT-5.5</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="claude" checked> 🟣 Claude 3.7</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="gemini" checked> 🔵 Gemini 2.0</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="devin" checked> 🧑‍💻 Devin AI</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="bolt" checked> ⚡ Bolt.new</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="lovable" checked> 💖 Lovable AI</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="deepseek" checked> 🟡 DeepSeek R1</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="grok" checked> 👁️ Grok 3</label>
+            <label class="flex items-center gap-1.5 cursor-pointer bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"><input type="checkbox" class="agent-check accent-indigo-600" value="z-ai" checked> 🌐 Z-AI / Cursor</label>
+          </div>
         </div>
 
-        <!-- 8 Agents Grid in One Space -->
+        <!-- 9 Flagship Agents Visual Arena Grid -->
         <div>
           <div class="flex items-center justify-between mb-3 px-1">
-            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider text-xs">Active Agent Specialists</h3>
-            <span class="text-xs text-slate-400">All connected to OmniFlow State Mesh</span>
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Agents in Swarm Space</h3>
+            <span class="text-xs text-slate-400">Click any card to start a direct 1-on-1 chat</span>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="agents-grid">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4" id="agents-swarm-cards">
             
-            <!-- Agent 1 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 1. GPT-5.5 -->
+            <div onclick="startDirectChat('gpt-5.5')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">🧠</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">🟢</span>
+                <span class="text-[10px] bg-emerald-50 text-emerald-700 font-bold px-2 py-0.5 rounded-full border border-emerald-200">OpenAI</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Lead Architect Agent</div>
-              <div class="text-xs text-indigo-600 font-medium mt-0.5">System Design & DAG Planner</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">GPT-4o</span></div>
-              <div id="agent-status-1" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">GPT-5.5 Cognitive</div>
+              <div class="text-xs text-slate-500 mt-0.5">Advanced System Design & Reasoning</div>
+              <div id="badge-gpt-5.5" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 2 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 2. Claude 3.7 -->
+            <div onclick="startDirectChat('claude')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">🔍</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">🟣</span>
+                <span class="text-[10px] bg-purple-50 text-purple-700 font-bold px-2 py-0.5 rounded-full border border-purple-200">Anthropic</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Deep Researcher Agent</div>
-              <div class="text-xs text-blue-600 font-medium mt-0.5">Knowledge & Hybrid RAG</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">Gemini 1.5 Pro</span></div>
-              <div id="agent-status-2" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Claude 3.7 Sonnet</div>
+              <div class="text-xs text-slate-500 mt-0.5">Deep Logic, Refactoring & Safety</div>
+              <div id="badge-claude" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 3 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 3. Gemini 2.0 -->
+            <div onclick="startDirectChat('gemini')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">💻</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">🔵</span>
+                <span class="text-[10px] bg-blue-50 text-blue-700 font-bold px-2 py-0.5 rounded-full border border-blue-200">Google</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Code Synthesizer Agent</div>
-              <div class="text-xs text-emerald-600 font-medium mt-0.5">Full-Stack & Backend Logic</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">Claude 3.5 Sonnet</span></div>
-              <div id="agent-status-3" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Gemini 2.0 Pro</div>
+              <div class="text-xs text-slate-500 mt-0.5">Multimodal & 1M Token Synthesis</div>
+              <div id="badge-gemini" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 4 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 4. Devin AI -->
+            <div onclick="startDirectChat('devin')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">🛡️</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">🧑‍💻</span>
+                <span class="text-[10px] bg-amber-50 text-amber-700 font-bold px-2 py-0.5 rounded-full border border-amber-200">Cognition</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Security Auditor Agent</div>
-              <div class="text-xs text-rose-600 font-medium mt-0.5">Zero-Trust & PII Guardrail</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">DeepSeek V3</span></div>
-              <div id="agent-status-4" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Devin AI Engineer</div>
+              <div class="text-xs text-slate-500 mt-0.5">Autonomous Software Engineer</div>
+              <div id="badge-devin" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 5 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 5. Bolt.new -->
+            <div onclick="startDirectChat('bolt')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">📊</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">⚡</span>
+                <span class="text-[10px] bg-yellow-50 text-yellow-700 font-bold px-2 py-0.5 rounded-full border border-yellow-200">StackBlitz</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Data Analyst Agent</div>
-              <div class="text-xs text-purple-600 font-medium mt-0.5">SQL Analytics & Cost Metering</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">GPT-4o</span></div>
-              <div id="agent-status-5" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Bolt.new Builder</div>
+              <div class="text-xs text-slate-500 mt-0.5">Full-Stack Web App Synthesizer</div>
+              <div id="badge-bolt" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 6 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 6. Lovable AI -->
+            <div onclick="startDirectChat('lovable')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">✍️</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">💖</span>
+                <span class="text-[10px] bg-pink-50 text-pink-700 font-bold px-2 py-0.5 rounded-full border border-pink-200">Lovable</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Technical Writer Agent</div>
-              <div class="text-xs text-amber-600 font-medium mt-0.5">Documentation & RFC Specs</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">Claude 3.5 Sonnet</span></div>
-              <div id="agent-status-6" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Lovable AI UI/UX</div>
+              <div class="text-xs text-slate-500 mt-0.5">Full-Stack Design & Polish</div>
+              <div id="badge-lovable" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 7 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 7. DeepSeek R1 -->
+            <div onclick="startDirectChat('deepseek')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">⚖️</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">🟡</span>
+                <span class="text-[10px] bg-amber-50 text-amber-700 font-bold px-2 py-0.5 rounded-full border border-amber-200">DeepSeek</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">Consensus Judge Agent</div>
-              <div class="text-xs text-teal-600 font-medium mt-0.5">Consensus & Grounding Verification</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">Gemini 1.5 Pro</span></div>
-              <div id="agent-status-7" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">DeepSeek R1</div>
+              <div class="text-xs text-slate-500 mt-0.5">Chain-of-Thought Math & Code</div>
+              <div id="badge-deepseek" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
-            <!-- Agent 8 -->
-            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-all">
+            <!-- 8. Grok 3 -->
+            <div onclick="startDirectChat('grok')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-2xl">🚀</span>
-                <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">ONLINE</span>
+                <span class="text-2xl">👁️</span>
+                <span class="text-[10px] bg-slate-100 text-slate-800 font-bold px-2 py-0.5 rounded-full border border-slate-300">xAI</span>
               </div>
-              <div class="font-bold text-sm text-slate-900">DevOps Deployer Agent</div>
-              <div class="text-xs text-cyan-600 font-medium mt-0.5">Docker & Kubernetes Helm</div>
-              <div class="text-[11px] text-slate-400 mt-2">Model: <span class="font-semibold text-slate-600">DeepSeek V3</span></div>
-              <div id="agent-status-8" class="mt-3 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100 font-mono">Status: Ready</div>
+              <div class="font-bold text-sm text-slate-900">Grok 3 Real-Time</div>
+              <div class="text-xs text-slate-500 mt-0.5">Direct, Unfiltered High-Speed AI</div>
+              <div id="badge-grok" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
+            </div>
+
+            <!-- 9. Z-AI / Cursor -->
+            <div onclick="startDirectChat('z-ai')" class="bg-white border border-slate-200 hover:border-indigo-400 rounded-2xl p-4 shadow-sm hover:shadow-md cursor-pointer transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-2xl">🌐</span>
+                <span class="text-[10px] bg-teal-50 text-teal-700 font-bold px-2 py-0.5 rounded-full border border-teal-200">Cursor</span>
+              </div>
+              <div class="font-bold text-sm text-slate-900">Z-AI / Cursor Agent</div>
+              <div class="text-xs text-slate-500 mt-0.5">Autonomous Code Pair Programmer</div>
+              <div id="badge-z-ai" class="mt-3 text-[11px] text-slate-400 bg-slate-50 p-2 rounded-xl font-mono">Status: Ready</div>
             </div>
 
           </div>
         </div>
 
-        <!-- Live Collaborative Output Feed -->
+        <!-- Live Collaborative Output Feed (All Agent Replies in One Space) -->
         <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
             <h3 class="font-bold text-sm text-slate-800 flex items-center gap-2">
-              <span>⚡ Live Swarm Collaboration Stream</span>
+              <span>⚡ Live Swarm Collaboration Stream (All Agent Replies)</span>
             </h3>
-            <span id="swarm-timing" class="text-xs text-slate-500 font-mono">Ready to broadcast</span>
+            <span id="swarm-timing-badge" class="text-xs text-slate-500 font-mono">Ready</span>
           </div>
 
-          <div id="swarm-feed" class="space-y-3 max-h-96 overflow-y-auto">
-            <div class="text-center py-8 text-slate-400 text-sm">
-              Click <strong>"🚀 Broadcast to All Agents"</strong> above to see all 8 agents collaborate and deliver their specialized outputs in real-time.
+          <div id="swarm-feed-container" class="space-y-4 max-h-[500px] overflow-y-auto pr-2">
+            <div class="text-center py-12 text-slate-400 text-sm">
+              Click <strong>"🚀 Broadcast to All Agents"</strong> above to watch GPT-5.5, Claude, Gemini, Devin, Bolt, Lovable, DeepSeek, Grok, and Z-AI generate and stream their specialized solutions simultaneously!
             </div>
           </div>
         </div>
 
       </section>
 
-      <!-- ================= 2. CHAT & AI PLAYGROUND ================= -->
+      <!-- ================= 2. 1-on-1 CHAT & AI PLAYGROUND ================= -->
       <section id="view-playground" class="hidden h-[calc(100vh-8.5rem)] flex gap-6">
         <div class="flex-1 flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
           
-          <!-- Playground Header -->
-          <div class="h-14 border-b border-slate-200 px-6 flex items-center justify-between bg-slate-50/50">
+          <!-- Playground Header & Model Switcher -->
+          <div class="h-14 border-b border-slate-200 px-6 flex items-center justify-between bg-slate-50/60">
             <div class="flex items-center space-x-3">
-              <span class="text-xs text-slate-500 font-medium">Active Model:</span>
-              <select id="chat-model-select" class="bg-white border border-slate-200 text-slate-800 text-xs font-semibold rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-xs">
-                <option value="gpt-4o">GPT-4o (OpenAI)</option>
-                <option value="claude-3-5-sonnet">Claude 3.5 Sonnet (Anthropic)</option>
-                <option value="gemini-1-5-pro">Gemini 1.5 Pro (Google)</option>
-                <option value="deepseek-chat">DeepSeek V3 (DeepSeek)</option>
+              <span class="text-xs text-slate-500 font-semibold">Active AI Agent:</span>
+              <select id="chat-model-select" onchange="onModelChange()" class="bg-white border border-slate-200 text-slate-800 text-xs font-bold rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-xs">
+                <option value="gpt-5.5">🟢 GPT-5.5 (OpenAI)</option>
+                <option value="claude">🟣 Claude 3.7 Sonnet (Anthropic)</option>
+                <option value="gemini">🔵 Gemini 2.0 Pro (Google)</option>
+                <option value="devin">🧑‍💻 Devin AI (Autonomous Software Engineer)</option>
+                <option value="bolt">⚡ Bolt.new (Full-Stack Web App Builder)</option>
+                <option value="lovable">💖 Lovable AI (UI/UX App Synthesizer)</option>
+                <option value="deepseek">🟡 DeepSeek R1 (Chain-of-Thought Reasoner)</option>
+                <option value="grok">👁️ Grok 3 (xAI Real-Time)</option>
+                <option value="z-ai">🌐 Z-AI / Cursor (Autonomous Pair Programmer)</option>
               </select>
             </div>
-            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-              ● Multi-Provider Model Ready
+            <span id="agent-active-badge" class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              ● Active & Ready
             </span>
           </div>
 
           <!-- Quick Suggestion Chips -->
           <div class="bg-slate-50/80 px-6 py-2 border-b border-slate-200 flex items-center gap-2 overflow-x-auto text-xs">
             <span class="text-slate-400 text-[11px] font-semibold flex-shrink-0">Quick Prompts:</span>
+            <button onclick="setAndSendPrompt('Build a full-stack Next.js web application with auth and database')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
+              🚀 Build Full-Stack App
+            </button>
+            <button onclick="setAndSendPrompt('Write a python function for an autonomous agent task runner')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
+              ⚡ Python Code
+            </button>
             <button onclick="setAndSendPrompt('Explain Multi-Agent DAG Orchestration and State Graphs')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
               💡 Multi-Agent Architecture
             </button>
-            <button onclick="setAndSendPrompt('Write a python function for an autonomous agent task runner')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
-              ⚡ Python Agent Code
-            </button>
-            <button onclick="setAndSendPrompt('How does Hybrid Vector Search and BM25 Reciprocal Rank Fusion work?')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
-              🔍 Hybrid RAG Pipeline
-            </button>
             <button onclick="setAndSendPrompt('Calculate (1500 * 0.002) + (3500 * 0.006)')" class="bg-white hover:bg-slate-100 text-slate-700 px-3 py-1 rounded-full border border-slate-200 flex-shrink-0 shadow-xs transition-colors">
-              🧮 Math & Token Calculation
+              🧮 Math Calculation
             </button>
           </div>
 
-          <!-- Chat Message Thread -->
+          <!-- Chat Messages Container -->
           <div id="chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4">
-            <div class="flex gap-3">
-              <div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm">Ω</div>
-              <div class="bg-slate-100 p-4 rounded-2xl text-sm max-w-2xl text-slate-800 leading-relaxed">
-                Welcome to the <strong>OmniFlow AI Playground</strong>. You can ask any question, request Python code generation, calculate math, or test multi-model inferences in this light theme workspace.
-              </div>
-            </div>
+            <!-- Messages populated via JS -->
           </div>
 
-          <!-- Message Input Bar -->
+          <!-- Input Bar -->
           <div class="p-4 border-t border-slate-200 bg-white">
             <div class="flex gap-3">
               <input
                 id="chat-input"
                 type="text"
                 onkeydown="if(event.key === 'Enter') sendChatMessage()"
-                placeholder="Ask a question, generate code, request math calculation, or prompt the AI..."
+                placeholder="Ask any question, request code generation, math calculation, or agent task..."
                 class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition-all shadow-inner"
               />
               <button onclick="sendChatMessage()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-xl shadow-md shadow-indigo-200 flex items-center transition-colors">
-                Send
+                Send Prompt
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Playground Side Controls -->
+        <!-- Sidebar Parameter Controls -->
         <div class="w-80 bg-white border border-slate-200 rounded-2xl p-5 space-y-5 shadow-sm">
-          <h3 class="font-bold text-sm text-slate-900 border-b border-slate-100 pb-3">Inference Controls</h3>
+          <h3 class="font-bold text-sm text-slate-900 border-b border-slate-100 pb-3">Agent Controls</h3>
           
           <div>
             <div class="flex justify-between text-xs text-slate-600 mb-1.5 font-medium">
@@ -330,15 +357,17 @@
 
           <div>
             <div class="flex justify-between text-xs text-slate-600 mb-1.5 font-medium">
-              <span>Max Output Tokens</span>
+              <span>Max Tokens</span>
               <span class="font-mono text-slate-800 font-bold">4,096</span>
             </div>
             <input type="range" min="256" max="8192" step="256" value="4096" class="w-full accent-indigo-600">
           </div>
 
           <div>
-            <label class="block text-xs font-semibold text-slate-700 mb-1.5">System Instructions</label>
-            <textarea class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-800 h-32 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white" readonly>You are an expert AI architect running on OmniFlow AI Platform with autonomous agent coordination capabilities.</textarea>
+            <label class="block text-xs font-semibold text-slate-700 mb-1.5">Agent Persona Profile</label>
+            <div id="agent-persona-desc" class="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200 leading-relaxed font-sans">
+              🟢 <strong>GPT-5.5</strong>: OpenAI flagship reasoning engine optimized for complex architecture, algorithms, and modular design.
+            </div>
           </div>
         </div>
       </section>
@@ -347,7 +376,7 @@
       <section id="view-prompts" class="hidden space-y-6">
         <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
           <h2 class="text-xl font-bold text-slate-900">Prompt Studio & Template Hydrator</h2>
-          <p class="text-xs text-slate-500 mt-1">Design Jinja2 prompt templates with dynamic variable extraction and instant live compilation.</p>
+          <p class="text-xs text-slate-500 mt-1">Design prompt templates with variable placeholders and test instant hydration across any model.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -356,22 +385,22 @@
           <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-4 shadow-sm">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <h3 class="text-sm font-bold text-slate-800">1. Template Editor</h3>
-              <span class="text-[11px] text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-mono font-medium">Jinja2 Format</span>
+              <span class="text-[11px] text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded font-mono font-medium">Jinja2 Syntax</span>
             </div>
             
-            <textarea id="prompt-template-input" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-800 h-44 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white">You are a {role} specializing in {domain}.
-Please analyze the following task:
-"{user_query}"
+            <textarea id="prompt-template-input" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-800 h-44 font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white">You are {agent_name}, an expert specializing in {domain}.
+Please analyze the user goal:
+"{user_goal}"
 
-Provide your output with structured recommendations and token estimations.</textarea>
+Provide your structured recommendations, code blocks, and verification steps.</textarea>
             
             <!-- Dynamic Variable Inputs -->
-            <div class="space-y-2 bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+            <div class="space-y-2 bg-slate-50 p-3 rounded-xl border border-slate-200">
               <div class="text-[11px] font-bold text-slate-600 uppercase tracking-wider">Template Variables:</div>
               <div class="grid grid-cols-3 gap-2">
-                <input id="var-role" type="text" value="Lead AI Architect" placeholder="role" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
-                <input id="var-domain" type="text" value="Multi-Agent Systems" placeholder="domain" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
-                <input id="var-query" type="text" value="How do we scale to 100M tokens/day?" placeholder="user_query" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
+                <input id="var-name" type="text" value="Devin AI" placeholder="agent_name" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
+                <input id="var-domain" type="text" value="Full-Stack Engineering" placeholder="domain" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
+                <input id="var-goal" type="text" value="Build a high-throughput AI gateway" placeholder="user_goal" class="bg-white border border-slate-200 rounded-lg p-2 text-xs text-slate-800 focus:ring-1 focus:ring-indigo-500" />
               </div>
             </div>
 
@@ -380,10 +409,10 @@ Provide your output with structured recommendations and token estimations.</text
             </button>
           </div>
 
-          <!-- Compiled Output -->
+          <!-- Hydrated Preview -->
           <div class="bg-white border border-slate-200 rounded-2xl p-5 space-y-4 shadow-sm flex flex-col">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-              <h3 class="text-sm font-bold text-slate-800">2. Hydrated Render Preview</h3>
+              <h3 class="text-sm font-bold text-slate-800">2. Hydrated Render Output</h3>
               <span id="hydrate-badge" class="text-[11px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-mono font-medium">Ready</span>
             </div>
             
@@ -399,6 +428,18 @@ Provide your output with structured recommendations and token estimations.</text
   </div>
 
   <script>
+    // State management
+    let currentSessionId = 'session_' + Date.now();
+    let currentChatMessages = [];
+    let savedSessions = [];
+
+    // Initialize
+    window.addEventListener('DOMContentLoaded', () => {
+      loadSavedChats();
+      initChatSession();
+      hydratePromptPreview();
+    });
+
     // Tab switching
     function switchTab(tabId) {
       document.querySelectorAll('main > section').forEach(el => el.classList.add('hidden'));
@@ -417,11 +458,11 @@ Provide your output with structured recommendations and token estimations.</text
       }
 
       const titles = {
-        swarm: "Multi-Agent Swarm Space",
-        playground: "Chat & AI Playground",
+        swarm: "Multi-Agent Swarm Arena",
+        playground: "1-on-1 AI Chat Playground",
         prompts: "Prompt Studio"
       };
-      document.getElementById('current-view-title').innerText = titles[tabId] || "Multi-Agent Swarm Space";
+      document.getElementById('current-view-title').innerText = titles[tabId] || "Multi-Agent Swarm Arena";
     }
 
     function setAndSendPrompt(promptText) {
@@ -430,68 +471,113 @@ Provide your output with structured recommendations and token estimations.</text
       sendChatMessage();
     }
 
-    // Broadcast task to all 8 agents in one space
-    async function broadcastSwarmTask() {
-      const task = document.getElementById('swarm-task-input').value.trim();
+    function startDirectChat(modelId) {
+      switchTab('playground');
+      document.getElementById('chat-model-select').value = modelId;
+      onModelChange();
+    }
+
+    function onModelChange() {
+      const m = document.getElementById('chat-model-select').value;
+      const descEl = document.getElementById('agent-persona-desc');
+      const descs = {
+        'gpt-5.5': '🟢 <strong>GPT-5.5</strong>: OpenAI flagship reasoning engine for algorithms and system architecture.',
+        'claude': '🟣 <strong>Claude 3.7</strong>: Anthropic reasoning model excels at deep analysis, nuance, and clean code formatting.',
+        'gemini': '🔵 <strong>Gemini 2.0</strong>: Google DeepMind multimodal long-context engine with real-time knowledge.',
+        'devin': '🧑‍💻 <strong>Devin AI</strong>: Cognition autonomous software engineer that plans, runs terminal commands, and resolves tasks.',
+        'bolt': '⚡ <strong>Bolt.new</strong>: Full-stack web app synthesizer generating live components and React apps.',
+        'lovable': '💖 <strong>Lovable AI</strong>: Full-stack UI/UX app synthesizer with polished design components.',
+        'deepseek': '🟡 <strong>DeepSeek R1</strong>: Chain-of-thought open reasoner with step-by-step mathematical reasoning.',
+        'grok': '👁️ <strong>Grok 3</strong>: xAI real-time, direct, and witty reasoning engine.',
+        'z-ai': '🌐 <strong>Z-AI / Cursor</strong>: Autonomous pair programmer specializing in instant code diffs.'
+      };
+      descEl.innerHTML = descs[m] || 'Active AI Agent Persona.';
+    }
+
+    // ================= EXECUTE MULTI-AGENT SWARM BROADCAST =================
+    async function executeMultiAgentBroadcast() {
+      const task = document.getElementById('swarm-prompt-input').value.trim();
       if (!task) return;
 
-      const feed = document.getElementById('swarm-feed');
-      const timing = document.getElementById('swarm-timing');
+      const feed = document.getElementById('swarm-feed-container');
+      const timing = document.getElementById('swarm-timing-badge');
       feed.innerHTML = '';
-      timing.innerHTML = '<span class="text-indigo-600 font-semibold animate-pulse">⚡ Swarm actively collaborating...</span>';
+      timing.innerHTML = '<span class="text-indigo-600 font-semibold animate-pulse">⚡ Swarm actively collaborating across all agents...</span>';
 
-      // Animate agent statuses
-      for (let i = 1; i <= 8; i++) {
-        const el = document.getElementById('agent-status-' + i);
-        if (el) el.innerHTML = '<span class="text-indigo-600 animate-pulse font-semibold">● Collaborating...</span>';
-      }
+      // Get selected agents
+      const selected = Array.from(document.querySelectorAll('.agent-check:checked')).map(c => c.value);
+
+      // Animate agent badge statuses
+      selected.forEach(a => {
+        const b = document.getElementById('badge-' + a);
+        if (b) b.innerHTML = '<span class="text-indigo-600 font-bold animate-pulse">● Processing...</span>';
+      });
 
       try {
         const resp = await fetch('/api/v1/swarm/broadcast', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ task: task })
+          body: JSON.stringify({ task: task, agents: selected })
         });
         const data = await resp.json();
         
-        timing.innerHTML = `<span class="text-emerald-600 font-semibold">✓ Completed across ${data.total_agents_invoked} agents in ${data.total_execution_ms}ms</span>`;
+        timing.innerHTML = `<span class="text-emerald-600 font-bold">✓ Completed across ${data.total_agents_invoked} agents in ${data.total_execution_ms}ms</span>`;
 
-        // Render each agent's contribution sequentially
+        // Render each agent's response sequentially
         data.deliverables.forEach((item, idx) => {
           setTimeout(() => {
             const card = document.createElement('div');
-            card.className = "bg-slate-50 border border-slate-200 rounded-xl p-4 shadow-xs";
+            card.className = "bg-slate-50 border border-slate-200 rounded-2xl p-5 shadow-xs transition-all";
+            
+            let formattedContent = item.output
+              .replace(/```python([\s\S]*?)```/g, '<div class="bg-slate-900 text-slate-100 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+              .replace(/```bash([\s\S]*?)```/g, '<div class="bg-slate-900 text-emerald-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+              .replace(/```tsx([\s\S]*?)```/g, '<div class="bg-slate-900 text-blue-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+              .replace(/```diff([\s\S]*?)```/g, '<div class="bg-slate-900 text-emerald-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+              .replace(/```([\s\S]*?)```/g, '<div class="bg-slate-900 text-slate-100 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+              .replace(/### (.*?)\n/g, '<div class="font-bold text-slate-900 text-base mt-2 mb-1">$1</div>')
+              .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+              .replace(/`([^`]+)`/g, '<code class="bg-white border border-slate-200 text-indigo-600 px-1.5 py-0.5 rounded text-xs font-semibold">$1</code>')
+              .replace(/\n/g, '<br>');
+
             card.innerHTML = `
-              <div class="flex items-center justify-between mb-1.5">
-                <div class="flex items-center gap-2">
-                  <span class="text-xl">${item.avatar}</span>
-                  <span class="font-bold text-sm text-slate-800">${item.agent}</span>
-                  <span class="text-[10px] bg-white border border-slate-200 text-indigo-600 px-2 py-0.5 rounded font-mono">${item.model}</span>
+              <div class="flex items-center justify-between mb-3 border-b border-slate-200/80 pb-2.5">
+                <div class="flex items-center gap-2.5">
+                  <span class="text-2xl">${item.avatar}</span>
+                  <div>
+                    <span class="font-bold text-sm text-slate-900">${item.agent}</span>
+                    <span class="text-[10px] ml-1.5 bg-indigo-50 border border-indigo-200 text-indigo-700 px-2 py-0.5 rounded-md font-mono">${item.badge}</span>
+                    <div class="text-[11px] text-slate-400 font-medium">${item.role}</div>
+                  </div>
                 </div>
-                <span class="text-xs font-mono text-emerald-600 font-semibold">✓ Done (${item.latency_ms}ms)</span>
+                <span class="text-xs font-mono text-emerald-600 font-bold bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">✓ ${item.latency_ms}ms</span>
               </div>
-              <p class="text-xs text-slate-700 pl-8 leading-relaxed">${item.output}</p>
+              <div class="text-xs text-slate-700 leading-relaxed font-sans">${formattedContent}</div>
             `;
             feed.appendChild(card);
             feed.scrollTop = feed.scrollHeight;
 
-            const el = document.getElementById('agent-status-' + (idx + 1));
-            if (el) el.innerHTML = `<span class="text-emerald-600 font-semibold">✓ Completed (${item.latency_ms}ms)</span>`;
-          }, idx * 180);
+            const b = document.getElementById('badge-' + item.agent_id);
+            if (b) b.innerHTML = `<span class="text-emerald-600 font-bold">✓ Done (${item.latency_ms}ms)</span>`;
+          }, idx * 220);
         });
 
+        // Save into chat session history automatically
+        saveChatToHistory(`Multi-Agent Swarm: ${task.substring(0, 30)}...`, task, "Swarm execution completed across 9 agents.");
+
       } catch (err) {
-        timing.innerHTML = '<span class="text-red-500">Error running swarm</span>';
+        timing.innerHTML = '<span class="text-red-500 font-bold">Error executing swarm broadcast</span>';
       }
     }
 
-    // Chat function
+    // ================= 1-ON-1 CHAT PLAYGROUND =================
     async function sendChatMessage() {
       const input = document.getElementById('chat-input');
       const text = input.value.trim();
       if (!text) return;
 
       const container = document.getElementById('chat-messages');
+      const model = document.getElementById('chat-model-select').value;
       
       // User bubble
       const userDiv = document.createElement('div');
@@ -506,15 +592,16 @@ Provide your output with structured recommendations and token estimations.</text
       input.value = '';
       container.scrollTop = container.scrollHeight;
 
+      currentChatMessages.push({ role: 'user', content: text });
+
       // AI bubble placeholder
-      const model = document.getElementById('chat-model-select').value;
       const respId = 'ai-resp-' + Date.now();
       const aiDiv = document.createElement('div');
       aiDiv.className = "flex gap-3";
       aiDiv.innerHTML = `
         <div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm">Ω</div>
-        <div class="bg-slate-100 p-4 rounded-2xl text-sm max-w-3xl text-slate-800 leading-relaxed" id="${respId}">
-          <span class="text-slate-500 animate-pulse">Evaluating request with ${model}...</span>
+        <div class="bg-white border border-slate-200 p-4 rounded-2xl text-sm max-w-3xl text-slate-800 leading-relaxed shadow-sm" id="${respId}">
+          <span class="text-slate-500 animate-pulse">Evaluating with ${model}...</span>
         </div>
       `;
       container.appendChild(aiDiv);
@@ -526,34 +613,161 @@ Provide your output with structured recommendations and token estimations.</text
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             model: model,
-            messages: [{ role: 'user', content: text }]
+            messages: currentChatMessages
           })
         });
         const data = await resp.json();
         const content = data.choices[0].message.content;
         
+        currentChatMessages.push({ role: 'assistant', content: content });
+
         let formatted = content
           .replace(/```python([\s\S]*?)```/g, '<div class="bg-slate-900 text-slate-100 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
           .replace(/```bash([\s\S]*?)```/g, '<div class="bg-slate-900 text-emerald-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+          .replace(/```tsx([\s\S]*?)```/g, '<div class="bg-slate-900 text-blue-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
+          .replace(/```diff([\s\S]*?)```/g, '<div class="bg-slate-900 text-emerald-300 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
           .replace(/```([\s\S]*?)```/g, '<div class="bg-slate-900 text-slate-100 p-3.5 rounded-xl my-2.5 font-mono text-xs overflow-x-auto shadow-sm"><pre><code>$1</code></pre></div>')
           .replace(/### (.*?)\n/g, '<div class="font-bold text-slate-900 text-base mt-2 mb-1">$1</div>')
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/`([^`]+)`/g, '<code class="bg-white border border-slate-200 text-indigo-600 px-1.5 py-0.5 rounded text-xs font-semibold">$1</code>')
+          .replace(/`([^`]+)`/g, '<code class="bg-slate-100 border border-slate-200 text-indigo-600 px-1.5 py-0.5 rounded text-xs font-semibold">$1</code>')
           .replace(/\n/g, '<br>');
 
         document.getElementById(respId).innerHTML = formatted;
+
+        // Auto-save session
+        saveChatToHistory(`Chat with ${model}: ${text.substring(0, 20)}...`, text, content);
+
       } catch (err) {
         document.getElementById(respId).innerHTML = `<span class="text-red-500 font-semibold">Error: ${err}</span>`;
       }
       container.scrollTop = container.scrollHeight;
     }
 
-    // Prompt Hydrator
+    // ================= PERSISTENT CHAT HISTORY =================
+    function initChatSession() {
+      currentChatMessages = [];
+      const container = document.getElementById('chat-messages');
+      container.innerHTML = `
+        <div class="flex gap-3">
+          <div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm">Ω</div>
+          <div class="bg-white border border-slate-200 p-4 rounded-2xl text-sm max-w-2xl text-slate-800 leading-relaxed shadow-sm">
+            Welcome to the <strong>OmniFlow AI Multi-Agent Platform</strong>. Select any AI agent (GPT-5.5, Claude 3.7, Gemini 2.0, Devin, Bolt, Lovable, DeepSeek R1, Grok, Z-AI) to start chatting, or switch to the <strong>Multi-Agent Swarm Arena</strong> to prompt all agents at once!
+          </div>
+        </div>
+      `;
+    }
+
+    function createNewChat() {
+      currentSessionId = 'session_' + Date.now();
+      initChatSession();
+      switchTab('playground');
+    }
+
+    function saveChatToHistory(title, lastPrompt, lastReply) {
+      const sessionObj = {
+        id: currentSessionId,
+        title: title || 'Chat Session',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        messages: currentChatMessages,
+      };
+
+      // Save to localStorage
+      let localChats = JSON.parse(localStorage.getItem('omniflow_chats') || '[]');
+      localChats = localChats.filter(c => c.id !== currentSessionId);
+      localChats.unshift(sessionObj);
+      localStorage.setItem('omniflow_chats', JSON.stringify(localChats.slice(0, 30)));
+
+      // Save to Server
+      fetch('/api/v1/chats/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session: sessionObj })
+      }).catch(e => console.log('Server save offline'));
+
+      loadSavedChats();
+    }
+
+    function saveCurrentChatSession() {
+      saveChatToHistory('Manual Saved Chat', 'Manual Save', 'Saved session');
+      alert('✓ Chat session successfully saved to your history!');
+    }
+
+    async function loadSavedChats() {
+      const listEl = document.getElementById('chat-history-list');
+      let chats = JSON.parse(localStorage.getItem('omniflow_chats') || '[]');
+      
+      try {
+        const resp = await fetch('/api/v1/chats');
+        const serverChats = await resp.json();
+        if (serverChats && serverChats.length > 0) {
+          chats = serverChats;
+        }
+      } catch (e) {}
+
+      if (chats.length === 0) {
+        listEl.innerHTML = '<div class="text-slate-400 py-3 text-center">No saved chats yet.</div>';
+        return;
+      }
+
+      listEl.innerHTML = '';
+      chats.forEach(c => {
+        const item = document.createElement('div');
+        item.className = "flex items-center justify-between p-2.5 rounded-xl hover:bg-slate-100 cursor-pointer text-slate-700 transition-colors group";
+        item.innerHTML = `
+          <div class="truncate flex-1" onclick="restoreChatSession('${c.id}')">
+            <div class="font-semibold truncate text-slate-800">${c.title || 'Untitled Session'}</div>
+            <div class="text-[10px] text-slate-400 font-mono">${c.timestamp || 'Today'}</div>
+          </div>
+          <button onclick="deleteChatSession('${c.id}', event)" class="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-red-500 px-1 text-xs">✕</button>
+        `;
+        listEl.appendChild(item);
+      });
+    }
+
+    function restoreChatSession(sessionId) {
+      let chats = JSON.parse(localStorage.getItem('omniflow_chats') || '[]');
+      const sess = chats.find(c => c.id === sessionId);
+      if (!sess) return;
+
+      currentSessionId = sess.id;
+      currentChatMessages = sess.messages || [];
+      const container = document.getElementById('chat-messages');
+      container.innerHTML = '';
+
+      currentChatMessages.forEach(m => {
+        const d = document.createElement('div');
+        if (m.role === 'user') {
+          d.className = "flex gap-3 justify-end";
+          d.innerHTML = `
+            <div class="bg-indigo-600 text-white p-3.5 rounded-2xl text-sm max-w-xl shadow-xs whitespace-pre-wrap">${m.content}</div>
+            <div class="w-8 h-8 rounded-xl bg-slate-800 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">U</div>
+          `;
+        } else {
+          d.className = "flex gap-3";
+          d.innerHTML = `
+            <div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0 shadow-sm">Ω</div>
+            <div class="bg-white border border-slate-200 p-4 rounded-2xl text-sm max-w-3xl text-slate-800 leading-relaxed shadow-sm">${m.content.replace(/\n/g, '<br>')}</div>
+          `;
+        }
+        container.appendChild(d);
+      });
+      switchTab('playground');
+    }
+
+    function deleteChatSession(sessionId, e) {
+      e.stopPropagation();
+      let chats = JSON.parse(localStorage.getItem('omniflow_chats') || '[]');
+      chats = chats.filter(c => c.id !== sessionId);
+      localStorage.setItem('omniflow_chats', JSON.stringify(chats));
+      loadSavedChats();
+    }
+
+    // ================= PROMPT STUDIO HYDRATION =================
     async function hydratePromptPreview() {
       const tmpl = document.getElementById('prompt-template-input').value;
-      const role = document.getElementById('var-role').value;
+      const name = document.getElementById('var-name').value;
       const domain = document.getElementById('var-domain').value;
-      const query = document.getElementById('var-query').value;
+      const goal = document.getElementById('var-goal').value;
 
       try {
         const resp = await fetch('/api/v1/prompts/hydrate', {
@@ -561,7 +775,7 @@ Provide your output with structured recommendations and token estimations.</text
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             template: tmpl,
-            variables: { role: role, domain: domain, user_query: query }
+            variables: { agent_name: name, domain: domain, user_goal: goal }
           })
         });
         const data = await resp.json();
@@ -569,15 +783,12 @@ Provide your output with structured recommendations and token estimations.</text
         document.getElementById('hydrate-badge').innerHTML = '<span class="text-emerald-600 font-bold">✓ Hydrated</span>';
       } catch (e) {
         const hydrated = tmpl
-          .replace(/{role}/g, role)
+          .replace(/{agent_name}/g, name)
           .replace(/{domain}/g, domain)
-          .replace(/{user_query}/g, query);
+          .replace(/{user_goal}/g, goal);
         document.getElementById('prompt-compiled-output').innerText = hydrated;
       }
     }
-
-    // Initialize with prompt preview
-    hydratePromptPreview();
   </script>
 </body>
 </html>

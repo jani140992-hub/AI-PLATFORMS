@@ -36,14 +36,19 @@
         Overview Dashboard
       </button>
 
+      <button onclick="switchTab('playground')" id="nav-playground" class="nav-btn w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
+        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+        Chat & AI Playground
+      </button>
+
+      <button onclick="switchTab('tools')" id="nav-tools" class="nav-btn w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
+        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        AI Tools & Sandbox Suite
+      </button>
+
       <button onclick="switchTab('workflows')" id="nav-workflows" class="nav-btn w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
         <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
         Agent Workflows (DAG)
-      </button>
-
-      <button onclick="switchTab('playground')" id="nav-playground" class="nav-btn w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
-        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-        Chat Playground
       </button>
 
       <button onclick="switchTab('knowledge')" id="nav-knowledge" class="nav-btn w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg text-slate-400 hover:bg-slate-800 hover:text-white transition-colors">
@@ -97,7 +102,7 @@
         <div class="h-4 w-px bg-slate-700"></div>
         <span class="px-2.5 py-0.5 text-xs rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
-          Gateway Cluster Healthy
+          Gateway Cluster Active & Responding
         </span>
       </div>
 
@@ -182,7 +187,195 @@
         </div>
       </section>
 
-      <!-- 2. WORKFLOWS BUILDER VIEW -->
+      <!-- 2. CHAT & AI PLAYGROUND VIEW -->
+      <section id="view-playground" class="hidden h-[calc(100vh-8.5rem)] flex gap-6">
+        <div class="flex-1 flex flex-col bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-xl">
+          <div class="h-14 border-b border-slate-800 px-6 flex items-center justify-between bg-slate-900/50">
+            <div class="flex items-center space-x-3">
+              <span class="text-xs text-slate-400 font-medium">Model:</span>
+              <select id="chat-model-select" class="bg-slate-800 border border-slate-700 text-white text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                <option value="gpt-4o">GPT-4o (OpenAI)</option>
+                <option value="claude-3-5-sonnet">Claude 3.5 Sonnet (Anthropic)</option>
+                <option value="gemini-1-5-pro">Gemini 1.5 Pro (Google)</option>
+                <option value="deepseek-chat">DeepSeek V3 (DeepSeek)</option>
+              </select>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-900/30 px-2 py-0.5 rounded border border-emerald-800/50">Active Model Inference Ready</span>
+            </div>
+          </div>
+
+          <!-- Quick Suggestion Prompts -->
+          <div class="bg-slate-900/80 px-6 py-2 border-b border-slate-800/80 flex items-center gap-2 overflow-x-auto text-xs">
+            <span class="text-slate-400 text-[11px] font-semibold flex-shrink-0">Quick Prompts:</span>
+            <button onclick="setAndSendPrompt('Explain Multi-Agent DAG Orchestration and State Graphs')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded-full border border-slate-700 flex-shrink-0 transition-colors">
+              💡 Explain Multi-Agent Architecture
+            </button>
+            <button onclick="setAndSendPrompt('Write a python function for an autonomous agent task runner')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded-full border border-slate-700 flex-shrink-0 transition-colors">
+              ⚡ Generate Python Agent Code
+            </button>
+            <button onclick="setAndSendPrompt('How does Hybrid Vector Search and BM25 Reciprocal Rank Fusion work?')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded-full border border-slate-700 flex-shrink-0 transition-colors">
+              🔍 Explain Hybrid RAG Pipeline
+            </button>
+            <button onclick="setAndSendPrompt('Calculate (1500 * 0.002) + (3500 * 0.006)')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1 rounded-full border border-slate-700 flex-shrink-0 transition-colors">
+              🧮 Math & Token Calculation
+            </button>
+          </div>
+
+          <div id="chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4">
+            <div class="flex gap-3">
+              <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">Ω</div>
+              <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-sm max-w-2xl text-slate-200 shadow-sm leading-relaxed">
+                Welcome to the <strong>OmniFlow AI Platform Playground</strong>. You can ask any question, request code generation, test calculations, or trigger autonomous AI agent actions below.
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 border-t border-slate-800 bg-slate-900/50">
+            <div class="flex gap-3">
+              <input
+                id="chat-input"
+                type="text"
+                onkeydown="if(event.key === 'Enter') sendChatMessage()"
+                placeholder="Ask a question, generate code, request math calculation, or execute tool..."
+                class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button onclick="sendChatMessage()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg flex items-center shadow-md transition-colors">
+                Send Prompt
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playground Sidebar -->
+        <div class="w-80 bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-5">
+          <h3 class="font-bold text-sm text-white border-b border-slate-800 pb-3">Inference Controls</h3>
+          
+          <div>
+            <div class="flex justify-between text-xs text-slate-400 mb-1">
+              <span>Temperature</span>
+              <span id="temp-val" class="font-mono text-slate-200">0.7</span>
+            </div>
+            <input type="range" min="0" max="2" step="0.1" value="0.7" oninput="document.getElementById('temp-val').innerText = this.value" class="w-full">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs text-slate-400 mb-1">
+              <span>Max Output Tokens</span>
+              <span class="font-mono text-slate-200">4,096</span>
+            </div>
+            <input type="range" min="256" max="8192" step="256" value="4096" class="w-full">
+          </div>
+
+          <div>
+            <label class="block text-xs text-slate-400 mb-1">System Instructions</label>
+            <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-200 h-28 font-mono focus:outline-none focus:ring-1 focus:ring-blue-500" readonly>You are an expert AI architect running on OmniFlow AI Platform with autonomous agent coordination capabilities.</textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. AI TOOLS & SANDBOX SUITE VIEW -->
+      <section id="view-tools" class="hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-lg font-bold text-white">AI Tools & Execution Sandbox Suite</h2>
+            <p class="text-xs text-slate-400">Interactive execution of sandboxed Python code, SQL analytics, multi-agent debates, and document summarizers.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Tool 1: Python Code Runner -->
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-semibold text-sm text-blue-400 flex items-center">
+                🛠️ Python Sandbox Tool
+              </span>
+              <span class="text-[10px] bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded">Execution Engine</span>
+            </div>
+            <textarea id="tool-python-code" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-xs text-slate-200 h-32 font-mono">def execute_agent_task(name):
+    tokens = len(name) * 4
+    return f"Agent {name} completed task with {tokens} tokens."
+
+print(execute_agent_task("OmniFlow_Planner"))</textarea>
+            <div class="flex items-center justify-between">
+              <button onclick="runPythonTool()" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow transition-colors">
+                ▶ Execute Python Code
+              </button>
+              <span id="tool-python-status" class="text-xs text-slate-400 font-mono">Ready</span>
+            </div>
+            <div id="tool-python-output" class="bg-slate-900 border border-slate-800 rounded-lg p-3 text-xs text-emerald-400 font-mono min-h-[70px] whitespace-pre-wrap">
+              [Click 'Execute Python Code' to run script in sandbox]
+            </div>
+          </div>
+
+          <!-- Tool 2: SQL Analytics Engine -->
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-semibold text-sm text-purple-400 flex items-center">
+                📊 SQL Analytics Engine Tool
+              </span>
+              <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5 rounded">Database Driver</span>
+            </div>
+            <textarea id="tool-sql-query" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-xs text-slate-200 h-32 font-mono">SELECT workflow_id, agent_type, status, execution_time_ms, tokens_used 
+FROM agent_workflows 
+WHERE status = 'COMPLETED' 
+ORDER BY execution_time_ms DESC;</textarea>
+            <div class="flex items-center justify-between">
+              <button onclick="runSQLTool()" class="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold rounded-lg shadow transition-colors">
+                ▶ Run SQL Query
+              </button>
+              <span id="tool-sql-status" class="text-xs text-slate-400 font-mono">Ready</span>
+            </div>
+            <div id="tool-sql-output" class="bg-slate-900 border border-slate-800 rounded-lg p-3 text-xs text-slate-200 min-h-[70px] overflow-x-auto">
+              [Click 'Run SQL Query' to view dataset]
+            </div>
+          </div>
+
+          <!-- Tool 3: Multi-Agent Consensus Debate -->
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-semibold text-sm text-emerald-400 flex items-center">
+                🧠 Multi-Agent Consensus Debate
+              </span>
+              <span class="text-[10px] bg-emerald-900/40 text-emerald-300 px-2 py-0.5 rounded">Autonomous Deliberation</span>
+            </div>
+            <input id="tool-debate-topic" type="text" value="Optimal Architecture for High-Scale LLM Gateway" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-200 font-mono">
+            <div class="flex items-center justify-between">
+              <button onclick="runDebateTool()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-lg shadow transition-colors">
+                ▶ Start Multi-Agent Deliberation
+              </button>
+              <span id="tool-debate-status" class="text-xs text-slate-400 font-mono">Ready</span>
+            </div>
+            <div id="tool-debate-output" class="bg-slate-900 border border-slate-800 rounded-lg p-3 text-xs text-slate-300 min-h-[100px] space-y-2">
+              [Click 'Start Multi-Agent Deliberation' to watch agents debate]
+            </div>
+          </div>
+
+          <!-- Tool 4: Document Summarizer -->
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-semibold text-sm text-amber-400 flex items-center">
+                📄 Document Summarizer & Extractor
+              </span>
+              <span class="text-[10px] bg-amber-900/40 text-amber-300 px-2 py-0.5 rounded">NLP Extraction</span>
+            </div>
+            <textarea id="tool-doc-text" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-200 h-24 font-mono">OmniFlow AI provides mission-critical enterprise capabilities for high-throughput AI workloads. The architecture implements stateless API routing, token-bucket rate limiting, exact SHA-256 and semantic cosine caching layers. Multi-agent workflows are committed to transactional checkpoints enabling time-travel debugging.</textarea>
+            <div class="flex items-center justify-between">
+              <button onclick="runSummarizerTool()" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold rounded-lg shadow transition-colors">
+                ▶ Summarize & Extract Entities
+              </button>
+              <span id="tool-doc-status" class="text-xs text-slate-400 font-mono">Ready</span>
+            </div>
+            <div id="tool-doc-output" class="bg-slate-900 border border-slate-800 rounded-lg p-3 text-xs text-slate-300 min-h-[100px]">
+              [Click 'Summarize & Extract Entities' to view summary]
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. WORKFLOWS BUILDER VIEW -->
       <section id="view-workflows" class="hidden space-y-4">
         <div class="flex items-center justify-between">
           <div>
@@ -264,75 +457,7 @@
         </div>
       </section>
 
-      <!-- 3. CHAT PLAYGROUND VIEW -->
-      <section id="view-playground" class="hidden h-[calc(100vh-8.5rem)] flex gap-6">
-        <div class="flex-1 flex flex-col bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-          <div class="h-14 border-b border-slate-800 px-6 flex items-center justify-between bg-slate-900/50">
-            <div class="flex items-center space-x-3">
-              <span class="text-xs text-slate-400 font-medium">Model:</span>
-              <select id="chat-model-select" class="bg-slate-800 border border-slate-700 text-white text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500">
-                <option value="gpt-4o">GPT-4o (OpenAI)</option>
-                <option value="claude-3-5-sonnet">Claude 3.5 Sonnet (Anthropic)</option>
-                <option value="gemini-1-5-pro">Gemini 1.5 Pro (Google)</option>
-                <option value="deepseek-chat">DeepSeek V3 (DeepSeek)</option>
-              </select>
-            </div>
-            <span class="text-xs font-mono text-blue-400 bg-blue-900/30 px-2 py-0.5 rounded border border-blue-800/50">Semantic Cache: ENABLED (0.92 cosine)</span>
-          </div>
-
-          <div id="chat-messages" class="flex-1 p-6 overflow-y-auto space-y-4">
-            <div class="flex gap-3">
-              <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">Ω</div>
-              <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-sm max-w-2xl text-slate-200 shadow-sm">
-                Welcome to the OmniFlow AI Platform Playground. Select any foundation model and send prompts to test live routing, caching, and guardrail responses.
-              </div>
-            </div>
-          </div>
-
-          <div class="p-4 border-t border-slate-800 bg-slate-900/50">
-            <div class="flex gap-3">
-              <input
-                id="chat-input"
-                type="text"
-                onkeydown="if(event.key === 'Enter') sendChatMessage()"
-                placeholder="Type your message or prompt here..."
-                class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button onclick="sendChatMessage()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg flex items-center transition-colors">
-                Send
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Playground Sidebar -->
-        <div class="w-80 bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-5">
-          <h3 class="font-bold text-sm text-white border-b border-slate-800 pb-3">Inference Controls</h3>
-          
-          <div>
-            <div class="flex justify-between text-xs text-slate-400 mb-1">
-              <span>Temperature</span>
-              <span id="temp-val" class="font-mono text-slate-200">0.7</span>
-            </div>
-            <input type="range" min="0" max="2" step="0.1" value="0.7" oninput="document.getElementById('temp-val').innerText = this.value" class="w-full">
-          </div>
-
-          <div>
-            <div class="flex justify-between text-xs text-slate-400 mb-1">
-              <span>Max Output Tokens</span>
-              <span class="font-mono text-slate-200">4,096</span>
-            </div>
-            <input type="range" min="256" max="8192" step="256" value="4096" class="w-full">
-          </div>
-
-          <div>
-            <label class="block text-xs text-slate-400 mb-1">System Instructions</label>
-            <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-200 h-28 font-mono focus:outline-none focus:ring-1 focus:ring-blue-500" readonly>You are an expert AI architect running on OmniFlow AI Platform with autonomous agent coordination capabilities.</textarea>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. KNOWLEDGE HUB (RAG) VIEW -->
+      <!-- 5. KNOWLEDGE HUB (RAG) VIEW -->
       <section id="view-knowledge" class="hidden space-y-6">
         <div class="flex items-center justify-between">
           <div>
@@ -356,7 +481,7 @@
         </div>
       </section>
 
-      <!-- 5. PROMPT STUDIO VIEW -->
+      <!-- 6. PROMPT STUDIO VIEW -->
       <section id="view-prompts" class="hidden space-y-6">
         <h2 class="text-lg font-bold text-white">Central Prompt Studio & Variable Hydrator</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -383,7 +508,7 @@ Provide output in JSON format with keys:
         </div>
       </section>
 
-      <!-- 6. GUARDRAILS VIEW -->
+      <!-- 7. GUARDRAILS VIEW -->
       <section id="view-guardrails" class="hidden space-y-6">
         <h2 class="text-lg font-bold text-white">Safety Guardrails & PII Redactor Sandbox</h2>
         <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 space-y-4">
@@ -399,7 +524,7 @@ Provide output in JSON format with keys:
         </div>
       </section>
 
-      <!-- 7. EVALUATIONS VIEW -->
+      <!-- 8. EVALUATIONS VIEW -->
       <section id="view-evaluations" class="hidden space-y-6">
         <h2 class="text-lg font-bold text-white">Evaluations & Benchmark Leaderboard</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -421,7 +546,7 @@ Provide output in JSON format with keys:
         </div>
       </section>
 
-      <!-- 8. MODELS VIEW -->
+      <!-- 9. MODELS VIEW -->
       <section id="view-models" class="hidden space-y-6">
         <h2 class="text-lg font-bold text-white">Model Hub & Pricing Matrix</h2>
         <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden">
@@ -468,8 +593,9 @@ Provide output in JSON format with keys:
 
       const titles = {
         dashboard: "Overview Dashboard",
+        playground: "Chat & AI Playground",
+        tools: "AI Tools & Sandbox Suite",
         workflows: "Agent Workflows (DAG)",
-        playground: "Chat Playground",
         knowledge: "Knowledge Hub (RAG)",
         prompts: "Prompt Studio",
         guardrails: "Guardrails & Safety",
@@ -477,6 +603,151 @@ Provide output in JSON format with keys:
         models: "Model Catalog & Pricing"
       };
       document.getElementById('current-view-title').innerText = titles[tabId] || "Overview Dashboard";
+    }
+
+    function setAndSendPrompt(promptText) {
+      document.getElementById('chat-input').value = promptText;
+      sendChatMessage();
+    }
+
+    // Interactive Tool Callers
+    async function runPythonTool() {
+      const code = document.getElementById('tool-python-code').value;
+      const statusEl = document.getElementById('tool-python-status');
+      const outBox = document.getElementById('tool-python-output');
+      statusEl.innerHTML = '<span class="text-blue-400 animate-pulse">Running in sandbox...</span>';
+      
+      try {
+        const resp = await fetch('/api/v1/tools/execute', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            tool_name: 'python_sandbox',
+            parameters: { code: code }
+          })
+        });
+        const data = await resp.json();
+        statusEl.innerHTML = `<span class="text-emerald-400">✓ Completed in ${data.execution_latency_ms}ms</span>`;
+        outBox.innerText = data.result;
+      } catch (err) {
+        statusEl.innerHTML = '<span class="text-red-400">Execution Error</span>';
+        outBox.innerText = "Error executing tool: " + err;
+      }
+    }
+
+    async function runSQLTool() {
+      const query = document.getElementById('tool-sql-query').value;
+      const statusEl = document.getElementById('tool-sql-status');
+      const outBox = document.getElementById('tool-sql-output');
+      statusEl.innerHTML = '<span class="text-purple-400 animate-pulse">Querying database...</span>';
+      
+      try {
+        const resp = await fetch('/api/v1/tools/execute', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            tool_name: 'sql_analytics',
+            parameters: { query: query }
+          })
+        });
+        const data = await resp.json();
+        statusEl.innerHTML = `<span class="text-emerald-400">✓ Fetched ${data.result.row_count} rows in ${data.execution_latency_ms}ms</span>`;
+        
+        let tableHtml = '<table class="w-full text-left text-xs border border-slate-800 rounded"><thead><tr class="bg-slate-900 text-slate-400 border-b border-slate-800">';
+        data.result.columns.forEach(col => {
+          tableHtml += `<th class="p-2">${col}</th>`;
+        });
+        tableHtml += '</tr></thead><tbody class="divide-y divide-slate-800">';
+        data.result.rows.forEach(row => {
+          tableHtml += '<tr>';
+          row.forEach(val => {
+            tableHtml += `<td class="p-2 font-mono text-slate-300">${val}</td>`;
+          });
+          tableHtml += '</tr>';
+        });
+        tableHtml += '</tbody></table>';
+        outBox.innerHTML = tableHtml;
+      } catch (err) {
+        statusEl.innerHTML = '<span class="text-red-400">Query Error</span>';
+        outBox.innerText = "Error executing SQL query: " + err;
+      }
+    }
+
+    async function runDebateTool() {
+      const topic = document.getElementById('tool-debate-topic').value;
+      const statusEl = document.getElementById('tool-debate-status');
+      const outBox = document.getElementById('tool-debate-output');
+      statusEl.innerHTML = '<span class="text-emerald-400 animate-pulse">Agents deliberating...</span>';
+      
+      try {
+        const resp = await fetch('/api/v1/tools/execute', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            tool_name: 'consensus_debate',
+            parameters: { topic: topic }
+          })
+        });
+        const data = await resp.json();
+        statusEl.innerHTML = `<span class="text-emerald-400">✓ Consensus Reached (${data.execution_latency_ms}ms)</span>`;
+        
+        let debateHtml = '';
+        data.result.forEach(agent => {
+          debateHtml += `
+            <div class="bg-slate-900 border border-slate-800 p-3 rounded-lg">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-slate-200">${agent.agent}</span>
+                <span class="text-[10px] bg-slate-800 text-blue-400 px-2 py-0.5 rounded font-mono">${agent.stance}</span>
+              </div>
+              <p class="text-slate-300 text-xs">${agent.argument}</p>
+            </div>
+          `;
+        });
+        outBox.innerHTML = debateHtml;
+      } catch (err) {
+        statusEl.innerHTML = '<span class="text-red-400">Debate Error</span>';
+        outBox.innerText = "Error running debate: " + err;
+      }
+    }
+
+    async function runSummarizerTool() {
+      const text = document.getElementById('tool-doc-text').value;
+      const statusEl = document.getElementById('tool-doc-status');
+      const outBox = document.getElementById('tool-doc-output');
+      statusEl.innerHTML = '<span class="text-amber-400 animate-pulse">Extracting summary...</span>';
+      
+      try {
+        const resp = await fetch('/api/v1/tools/execute', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            tool_name: 'doc_summarizer',
+            parameters: { text: text }
+          })
+        });
+        const data = await resp.json();
+        statusEl.innerHTML = `<span class="text-emerald-400">✓ Summarized (${data.execution_latency_ms}ms)</span>`;
+        
+        let summaryHtml = `
+          <div class="space-y-2">
+            <div class="text-xs font-semibold text-slate-200">Executive Summary:</div>
+            <p class="text-slate-300 text-xs bg-slate-900 p-2.5 rounded border border-slate-800">${data.result.executive_summary}</p>
+            <div class="text-xs font-semibold text-slate-200 mt-2">Key Takeaways:</div>
+            <ul class="list-disc pl-5 text-xs text-slate-300 space-y-1">
+        `;
+        data.result.key_takeaways.forEach(item => {
+          summaryHtml += `<li>${item}</li>`;
+        });
+        summaryHtml += `
+            </ul>
+            <div class="text-[11px] text-slate-500 mt-1">Sentiment: <span class="text-emerald-400">${data.result.sentiment}</span> | Words: ${data.result.word_count}</div>
+          </div>
+        `;
+        outBox.innerHTML = summaryHtml;
+      } catch (err) {
+        statusEl.innerHTML = '<span class="text-red-400">Summarizer Error</span>';
+        outBox.innerText = "Error summarizing text: " + err;
+      }
     }
 
     async function executeWorkflowSim() {
@@ -519,10 +790,11 @@ Provide output in JSON format with keys:
 
       const container = document.getElementById('chat-messages');
       
+      // User bubble
       const userDiv = document.createElement('div');
       userDiv.className = "flex gap-3 justify-end";
       userDiv.innerHTML = `
-        <div class="bg-blue-600 text-white p-3.5 rounded-xl text-sm max-w-xl shadow-sm">
+        <div class="bg-blue-600 text-white p-3.5 rounded-xl text-sm max-w-xl shadow-sm whitespace-pre-wrap">
           ${text}
         </div>
         <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">U</div>
@@ -531,13 +803,15 @@ Provide output in JSON format with keys:
       input.value = '';
       container.scrollTop = container.scrollHeight;
 
+      // AI bubble placeholder
       const model = document.getElementById('chat-model-select').value;
+      const respId = 'ai-resp-' + Date.now();
       const aiDiv = document.createElement('div');
       aiDiv.className = "flex gap-3";
       aiDiv.innerHTML = `
-        <div class="w-8 h-8 rounded-lg bg-purple-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div>
-        <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-sm max-w-2xl text-slate-200 shadow-sm font-sans" id="ai-response-current">
-          <span class="text-slate-500 animate-pulse">Routing through OmniFlow Gateway to ${model}...</span>
+        <div class="w-8 h-8 rounded-lg bg-purple-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">Ω</div>
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-sm max-w-3xl text-slate-200 shadow-sm leading-relaxed" id="${respId}">
+          <span class="text-slate-400 animate-pulse">Evaluating request across ${model} cluster...</span>
         </div>
       `;
       container.appendChild(aiDiv);
@@ -554,9 +828,21 @@ Provide output in JSON format with keys:
         });
         const data = await resp.json();
         const content = data.choices[0].message.content;
-        document.getElementById('ai-response-current').innerHTML = content.replace(/\\n/g, '<br>');
+        
+        // Simple markdown code block formatter
+        let formatted = content
+          .replace(/```python([\s\S]*?)```/g, '<div class="bg-slate-950 p-3 rounded-lg border border-slate-800 my-2 font-mono text-xs text-blue-300 overflow-x-auto"><pre><code>$1</code></pre></div>')
+          .replace(/```bash([\s\S]*?)```/g, '<div class="bg-slate-950 p-3 rounded-lg border border-slate-800 my-2 font-mono text-xs text-emerald-300 overflow-x-auto"><pre><code>$1</code></pre></div>')
+          .replace(/```text([\s\S]*?)```/g, '<div class="bg-slate-950 p-3 rounded-lg border border-slate-800 my-2 font-mono text-xs text-slate-300 overflow-x-auto"><pre><code>$1</code></pre></div>')
+          .replace(/```([\s\S]*?)```/g, '<div class="bg-slate-950 p-3 rounded-lg border border-slate-800 my-2 font-mono text-xs text-slate-300 overflow-x-auto"><pre><code>$1</code></pre></div>')
+          .replace(/### (.*?)\n/g, '<div class="font-bold text-white text-base mt-2 mb-1">$1</div>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/`([^`]+)`/g, '<code class="bg-slate-800 text-blue-400 px-1 py-0.5 rounded text-xs">$1</code>')
+          .replace(/\n/g, '<br>');
+
+        document.getElementById(respId).innerHTML = formatted;
       } catch (err) {
-        document.getElementById('ai-response-current').innerHTML = `[OmniFlow ${model}]: Completed request successfully.<br><br>OmniFlow AI executes state graph workflows, semantic caching, and zero-trust safety guardrails.`;
+        document.getElementById(respId).innerHTML = `<span class="text-red-400">Error generating reply: ${err}</span>`;
       }
       container.scrollTop = container.scrollHeight;
     }
